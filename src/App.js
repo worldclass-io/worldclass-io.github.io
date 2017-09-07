@@ -21,7 +21,7 @@ class App extends Component {
             <h1>The Easiest Way to Make Online Courses</h1>
             <h3>It's super easy to create, publish and sell courses online.
   Get your branded site and mobile apps today!</h3>
-<a href="http://tutorialzine.com/2016/06/freebie-landing-page-template-with-flexbox/" className="btn">Try it for free</a>
+<a href="https://tutorialzine.com/2016/06/freebie-landing-page-template-with-flexbox/" className="btn">Try it for free</a>
           </div>
 
         </section>
@@ -82,7 +82,7 @@ class App extends Component {
             <li><a href="#"><i className="fa fa-pinterest-square" /></a></li>
             <li><a href="#"><i className="fa fa-github-square" /></a></li>
           </ul>
-          <p>Made by <a href="http://tutorialzine.com/" target="_blank">tutorialzine</a>. images courtesy to <a href="http://unsplash.com/" target="_blank">unsplash</a>.</p>
+          <p>Made by <a href="https://tutorialzine.com/" target="_blank">tutorialzine</a>. images courtesy to <a href="https://unsplash.com/" target="_blank">unsplash</a>.</p>
           <p>No attribution required. you can remove this footer.</p>
         </footer>
       </div>
