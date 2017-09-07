@@ -16,7 +16,7 @@ class App extends Component {
           </nav>
         </header>
         <section className="hero">
-          <div className="background-image" style={{backgroundImage: 'url(assets/img/hero.jpg)'}} />
+          <div className="background-image" style={{backgroundImage: 'url(https://www.worldclass.io/wp-content/uploads/2016/06/main-home-1-e1467298797194.jpeg)'}} />
           <div style={{maxWidth: 700}}>
             <h1>The Easiest Way to Make Online Courses</h1>
             <h3>It's super easy to create, publish and sell courses online.
