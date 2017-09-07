@@ -2,7 +2,7 @@
   "name": "temp",
   "version": "0.1.0",
   "private": true,
-  "homepage": "/build",
+  "homepage": "https://worldclass-io.github.io/build",
   "devDependencies": {
     "react-scripts": "1.0.13"
   },
