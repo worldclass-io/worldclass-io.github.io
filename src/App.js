@@ -12,7 +12,7 @@ class App extends Component {
             <div className="topbar-left">
               <button className="topbar-toggler">☰</button>
               <a className="topbar-brand" href="index.html">
-                {/* <img class="logo-default" src="assets/img/demo/slack/logo.png" alt="logo"> */}
+                {/* <img class="logo-default" src={require('./img/logo.png')} alt="logo"> */}
                 <span style={{color: '#3b3b3b', fontSize: 20, fontWeight: 'normal'}}>WORLDCLASS</span>
               </a>
             </div>
@@ -40,7 +40,7 @@ class App extends Component {
                 <p className="pt-8"><small>Already have an account? <a className="text-muted" href="page-login.html">Sign in</a></small></p>
               </div>
               <div className="col-12 col-lg-6 offset-lg-1 img-outside-right hidden-md-down">
-                <img className="shadow-4" src="assets/img/demo/slack/dashboard.jpg" alt="..." />
+                <img className="shadow-4" src={require('./img/dashboard.jpg')} alt="..." />
               </div>
             </div>
           </div>
@@ -62,7 +62,7 @@ class App extends Component {
               </header>
               <div className="row gap-y align-items-center">
                 <div className="col-12 col-md-5 text-center">
-                  <img src="assets/img/demo/slack/drag.png" alt="..." />
+                  <img src={require('./img/drag.png')} alt="..." />
                 </div>
                 <div className="col-12 offset-md-1 col-md-6">
                   <h5>Drag, drop, and share your files.</h5>
@@ -77,13 +77,13 @@ class App extends Component {
                   <p>Everything in Slack—messages, notifications, files, and all—is automatically indexed and archived so that you can have it at your fingertips whenever you want. Slack also indexes the content of every file so you can search within PDFs, Word documents, Google docs, and more. With one search box and a set of powerful search operators, you can slice and dice your way to that one message in your communication haystack.</p>
                 </div>
                 <div className="col-12 offset-md-1 col-md-5 text-center">
-                  <img src="assets/img/demo/slack/everywhere.png" alt="..." />
+                  <img src={require('./img/everywhere.png')} alt="..." />
                 </div>
               </div>
               <hr className="w-200 my-90" />
               <div className="row gap-y align-items-center">
                 <div className="col-12 col-md-5 text-center">
-                  <img src="assets/img/demo/slack/tools.png" alt="..." />
+                  <img src={require('./img/tools.png')} alt="..." />
                 </div>
                 <div className="col-12 offset-md-1 col-md-6">
                   <h5>All your tools in one place.</h5>
@@ -142,7 +142,7 @@ class App extends Component {
           <section className="section text-center">
             <div className="row">
               <div className="col-12 offset-md-3 col-md-6">
-                <p><img src="assets/img/demo/slack/cta.png" alt="..." /></p>
+                <p><img src={require('./img/cta.png')} alt="..." /></p>
                 <br />
                 <h3 className="fw-900 mb-20">Reclaim your workday</h3>
                 <p className="lead text-muted">Less email. More productive. Our customers see an average 48.6% reduction in internal email, helping them enjoy a simpler, more pleasant, and more productive work life.</p>
