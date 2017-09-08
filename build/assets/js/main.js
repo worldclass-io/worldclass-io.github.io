@@ -1,6 +1,23 @@
 'use strict';
 
 $(function() {
+
+  var body = $("body");
+
+  $(document).on("click", ".topbar-toggler", function() {
+      body.toggleClass("topbar-reveal"), $(this).closest(".topbar").prepend('<div class="topbar-backdrop"></div>')
+  }), $(document).on("click", ".topbar-backdrop", function() {
+      body.toggleClass("topbar-reveal"), $(this).remove()
+  }), $(document).on("click", ".topbar-reveal .topbar-nav .nav-item > .nav-link", function() {
+      var b = $(this),
+          c = b.next(".nav-submenu"),
+          d = b.closest(".nav-submenu");
+      b.closest(".topbar-nav").find(".nav-submenu").not(c).not(d).slideUp(), body.slideToggle()
+  }), $(document).on("click", ".topbar-reveal .topbar-nav .nav-link", function() {
+      $(this).hasDataAttr("scrollto") && (body.removeClass("topbar-reveal"), $(".topbar-backdrop").remove())
+  })
+
+
   // Select all links with hashes
   $('a[href*="#"]')
     // Remove links that don't actually link to anything

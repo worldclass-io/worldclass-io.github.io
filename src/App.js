@@ -12,7 +12,6 @@ class App extends Component {
             <div className="topbar-left">
               <button className="topbar-toggler">☰</button>
               <a className="topbar-brand" href="index.html">
-                {/* <img class="logo-default" src={require('./img/logo.png')} alt="logo"> */}
                 <span style={{color: '#3b3b3b', fontSize: 20, fontWeight: 'normal'}}>WORLDCLASS</span>
               </a>
             </div>
@@ -33,6 +32,9 @@ class App extends Component {
             <div className="row h-full align-items-center text-center text-lg-left">
               <div className="offset-1 col-10 col-lg-4 offset-lg-1">
                 <h1>WorldClass<br /><small style={{color: '#3b3b3b'}}>The Easiest Way to Make Online Courses</small></h1>
+
+                <p>It's super easy to create, publish and sell courses online.
+Get your branded site and mobile apps today!</p>
                 <br />
                 <p className="lead mx-auto" />
                 <br />
