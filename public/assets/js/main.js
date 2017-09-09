@@ -4,6 +4,15 @@ $(function() {
 
   var body = $("body");
 
+  function hasDataAttr(elem, attr) {
+    if (elem.attr(attr)) {
+      return true;
+    }
+
+    return false;
+  }
+
+
   $(document).on("click", ".topbar-toggler", function() {
       body.toggleClass("topbar-reveal"), $(this).closest(".topbar").prepend('<div class="topbar-backdrop"></div>')
   }), $(document).on("click", ".topbar-backdrop", function() {
@@ -14,7 +23,7 @@ $(function() {
           d = b.closest(".nav-submenu");
       b.closest(".topbar-nav").find(".nav-submenu").not(c).not(d).slideUp(), body.slideToggle()
   }), $(document).on("click", ".topbar-reveal .topbar-nav .nav-link", function() {
-      $(this).hasDataAttr("scrollto") && (body.removeClass("topbar-reveal"), $(".topbar-backdrop").remove())
+      hasDataAttr($(this), 'scrollto') && (body.removeClass("topbar-reveal"), $(".topbar-backdrop").remove())
   })
 
 

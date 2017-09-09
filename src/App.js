@@ -18,9 +18,9 @@ class App extends Component {
             <div className="topbar-right">
               <ul className="topbar-nav nav">
                 <li className="nav-item"><a className="nav-link" href="#" data-scrollto="home">Home</a></li>
-                <li className="nav-item"><a className="nav-link" href="#section-features">Features</a></li>
-                <li className="nav-item"><a className="nav-link" href="#section-pricing">Pricing</a></li>
-                <li className="nav-item"><a className="nav-link" href="#section-faq">FAQ</a></li>
+                <li className="nav-item"><a className="nav-link" href="#section-features" data-scrollto="section-features">Features</a></li>
+                <li className="nav-item"><a className="nav-link" href="#section-pricing" data-scrollto="section-pricing">Pricing</a></li>
+                <li className="nav-item"><a className="nav-link" href="#section-faq" data-scrollto="section-faq">FAQ</a></li>
               </ul>
             </div>
           </div>
