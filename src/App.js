@@ -42,7 +42,7 @@ Get your branded site and mobile apps today!</p>
                 <p className="pt-8"><small>Already have an account? <a className="text-muted" href="page-login.html">Sign in</a></small></p>
               </div>
               <div className="col-12 col-lg-6 offset-lg-1 img-outside-right hidden-md-down">
-                <img className="shadow-4" src={require('./img/dashboard.jpg')} alt="..." />
+                <img className="shadow-4" src={require('./img/dashboard2.jpg')} alt="..." />
               </div>
             </div>
           </div>
