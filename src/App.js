@@ -18,16 +18,16 @@ class App extends Component {
             <div className="topbar-right">
               <ul className="topbar-nav nav">
                 <li className="nav-item"><a className="nav-link" href="#" data-scrollto="home">Home</a></li>
-                <li className="nav-item"><a className="nav-link" href="#section-features" data-scrollto="section-features">Features</a></li>
-                <li className="nav-item"><a className="nav-link" href="#section-pricing" data-scrollto="section-pricing">Pricing</a></li>
-                <li className="nav-item"><a className="nav-link" href="#section-faq" data-scrollto="section-faq">FAQ</a></li>
+                <li className="nav-item"><a className="nav-link" href="#" data-scrollto="section-features">Features</a></li>
+                <li className="nav-item"><a className="nav-link" href="#" data-scrollto="section-pricing">Pricing</a></li>
+                <li className="nav-item"><a className="nav-link" href="#" data-scrollto="section-faq">FAQ</a></li>
               </ul>
             </div>
           </div>
         </nav>
         {/* END Topbar */}
         {/* Header */}
-        <header className="header h-fullscreen" style={{backgroundImage: 'linear-gradient(150deg, #fdfbfb 0%, #eee 100%)'}}>
+        <header className="header h-fullscreen" id="home" style={{backgroundImage: 'linear-gradient(150deg, #fdfbfb 0%, #eee 100%)'}}>
           <div className="container-wide">
             <div className="row h-full align-items-center text-center text-lg-left">
               <div className="offset-1 col-10 col-lg-4 offset-lg-1">
