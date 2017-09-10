@@ -1,6 +1,16 @@
 import React, { Component } from 'react';
 import './App.css';
 
+const styles = {
+  getStartedButton: {
+    padding: 14,
+    margin: 16,
+    height: 40,
+    lineHeight: 1,
+    verticalAlign: 'baseline'
+  }
+}
+
 class App extends Component {
   render() {
     return (
@@ -20,6 +30,13 @@ class App extends Component {
                 <li className="nav-item"><a className="nav-link" href data-scrollto="section-features">Features</a></li>
                 <li className="nav-item"><a className="nav-link" href data-scrollto="section-pricing">Pricing</a></li>
                 <li className="nav-item"><a className="nav-link" href data-scrollto="section-faq">FAQ</a></li>
+                <li className="nav-item"><a className="nav-link" href data-scrollto="section-help">Help</a></li>
+                <li className="nav-item"><a className="nav-link" href="https://studio.worldclass.io/#/login">Sign in</a></li>
+                <li>
+                  <a className="btn btn-lg btn-success"
+                    style={styles.getStartedButton}
+                    href="https://studio.worldclass.io/#/signup">Get Started</a>
+                </li>
               </ul>
             </div>
           </div>
