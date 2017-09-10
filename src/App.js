@@ -33,8 +33,7 @@ class App extends Component {
               <div className="offset-1 col-10 col-lg-4 offset-lg-1">
                 <h1>WorldClass<br /><small style={{color: '#3b3b3b'}}>The Easiest Way to Make Online Courses</small></h1>
 
-                <p>It's super easy to create, publish and sell courses online.
-Get your branded site and mobile apps today!</p>
+                <p>Create, publish and sell beautiful courses online</p>
                 <br />
                 <p className="lead mx-auto" />
                 <br />
