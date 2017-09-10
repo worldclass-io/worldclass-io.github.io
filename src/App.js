@@ -35,7 +35,7 @@ class App extends Component {
                 <li>
                   <a className="btn btn-lg btn-success"
                     style={styles.getStartedButton}
-                    href="https://studio.worldclass.io/#/signup">Get Started</a>
+                    href="https://studio.worldclass.io/#/signup">Launch an Academy</a>
                 </li>
               </ul>
             </div>
@@ -47,14 +47,17 @@ class App extends Component {
           <div className="container-wide">
             <div className="row h-full align-items-center text-center text-lg-left">
               <div className="offset-1 col-10 col-lg-4 offset-lg-1">
-                <h1>WorldClass<br /><small style={{color: '#3b3b3b'}}>Create, publish and sell beautiful courses online</small></h1>
+                <h1>Create, publish and sell beautiful courses online</h1>
 
-                <p>It's super easy to create, publish and sell courses online.
-Get your branded site and mobile apps today!</p>
+                <p>
+                  Get your fully branded course website going in minutes.<br/>
+                  Whether you're an individual instructor, a team leader or an enterprise -
+                  WorldClass has you covered!
+                </p>
                 <br />
                 <p className="lead mx-auto" />
                 <br />
-                <a className="btn btn-lg btn-success" href="page-register.html">Get Started</a>
+                <a className="btn btn-lg btn-success" href="https://studio.worldclass.io/#/signup">Get Started</a>
                 <p className="pt-8"><small>Already have an account? <a className="text-muted" href="page-login.html">Sign in</a></small></p>
               </div>
               <div className="col-12 col-lg-6 offset-lg-1 img-outside-right hidden-md-down">
@@ -75,7 +78,7 @@ Get your branded site and mobile apps today!</p>
             <div className="container">
               <header className="section-header">
                 <small>Features</small>
-                <h2>Team communication for the 21st century.</h2>
+                <h2>Everything you need to create and sell courses online</h2>
                 <hr />
               </header>
               <div className="row gap-y align-items-center">
@@ -83,16 +86,16 @@ Get your branded site and mobile apps today!</p>
                   <img src={require('./img/drag.png')} alt="..." />
                 </div>
                 <div className="col-12 offset-md-1 col-md-6">
-                  <h5>Drag, drop, and share your files.</h5>
-                  <p>Not just your messages, but all your files, images, PDFs, documents, and spreadsheets can be dropped right into Slack and shared with anyone you want. Add comments, star for later reference, and it’s all completely searchable.</p>
-                  <p>If you use any services like Google Drive, Dropbox, or Box, just paste the link and that document is immediately in sync and searchable too.</p>
+                  <h5>Drag & Drop Course Builder.</h5>
+                  <p>Add texts, images, videos, files, polls, questions and virtually anything else you can think of with our intuitive course builder.</p>
                 </div>
               </div>
               <hr className="w-200 my-90" />
               <div className="row gap-y align-items-center">
                 <div className="col-12 col-md-6">
-                  <h5>Works everywhere you go</h5>
-                  <p>Everything in Slack—messages, notifications, files, and all—is automatically indexed and archived so that you can have it at your fingertips whenever you want. Slack also indexes the content of every file so you can search within PDFs, Word documents, Google docs, and more. With one search box and a set of powerful search operators, you can slice and dice your way to that one message in your communication haystack.</p>
+                  <h5>Advanced quizzes and assesments</h5>
+                  <p>Create graded simulation exams or simple practive ones. Single or multi-chapter tests with or without time limits.</p>
+                  <p>Your users will get exact stats, progress reports and suggestions for what to practice next.</p>
                 </div>
                 <div className="col-12 offset-md-1 col-md-5 text-center">
                   <img src={require('./img/everywhere.png')} alt="..." />
@@ -104,9 +107,11 @@ Get your branded site and mobile apps today!</p>
                   <img src={require('./img/tools.png')} alt="..." />
                 </div>
                 <div className="col-12 offset-md-1 col-md-6">
-                  <h5>All your tools in one place.</h5>
-                  <p>Connect all the tools you use to Slack and avoid all that constant switching between apps. Set up your integration so that you get all your notifications directly within Slack—from support requests, code check-ins, and error logs to sales leads—all of them searchable in one central archive.</p>
-                  <p>If you use any services like Google Drive, Dropbox, or Box, just paste the link and that document is immediately in sync and searchable too.</p>
+                  <h5>Instant Payouts, No Comissions!</h5>
+                  <p>Integrate with your Stripe, Paypal or Instamojo account and collect payments from your users around the world. Funds are transferred directly to your account with no added sales commission.</p>
+                  <img src={require('./img/payment-methods.png')} alt="Available payment methods" />
+                  <hr style={{margin: '1rem auto'}}/>
+                  <img src={require('./img/gateway-logos-small.png')} alt="Available gateways" />
                 </div>
               </div>
             </div>
