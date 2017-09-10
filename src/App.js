@@ -16,10 +16,10 @@ class App extends Component {
             </div>
             <div className="topbar-right">
               <ul className="topbar-nav nav">
-                <li className="nav-item"><a className="nav-link" href="#" data-scrollto="home">Home</a></li>
-                <li className="nav-item"><a className="nav-link" href="#" data-scrollto="section-features">Features</a></li>
-                <li className="nav-item"><a className="nav-link" href="#" data-scrollto="section-pricing">Pricing</a></li>
-                <li className="nav-item"><a className="nav-link" href="#" data-scrollto="section-faq">FAQ</a></li>
+                <li className="nav-item"><a className="nav-link" href data-scrollto="home">Home</a></li>
+                <li className="nav-item"><a className="nav-link" href data-scrollto="section-features">Features</a></li>
+                <li className="nav-item"><a className="nav-link" href data-scrollto="section-pricing">Pricing</a></li>
+                <li className="nav-item"><a className="nav-link" href data-scrollto="section-faq">FAQ</a></li>
               </ul>
             </div>
           </div>
@@ -108,7 +108,7 @@ Get your branded site and mobile apps today!</p>
                       <p><i className="icon-layers fs-50 text-muted" /></p>
                       <h4 className="card-title">Channels</h4>
                       <p className="card-text">Organize your team conversations in open channels. Make a channel for a project, a team, or everyone has a transparent view.</p>
-                      <a className="fw-600 fs-12" href="#">Read more <i className="fa fa-chevron-right fs-9 pl-5" /></a>
+                      <a className="fw-600 fs-12" href>Read more <i className="fa fa-chevron-right fs-9 pl-5" /></a>
                     </div>
                   </div>
                 </div>
@@ -118,7 +118,7 @@ Get your branded site and mobile apps today!</p>
                       <p><i className="icon-chat fs-50 text-muted" /></p>
                       <h4 className="card-title">Direct Messages</h4>
                       <p className="card-text">Send messages directly to another and any person or to a small group of people for more focused conversations.</p>
-                      <a className="fw-600 fs-12" href="#">Read more <i className="fa fa-chevron-right fs-9 pl-5" /></a>
+                      <a className="fw-600 fs-12" href>Read more <i className="fa fa-chevron-right fs-9 pl-5" /></a>
                     </div>
                   </div>
                 </div>
@@ -128,7 +128,7 @@ Get your branded site and mobile apps today!</p>
                       <p><i className="icon-mic fs-50 text-muted" /></p>
                       <h4 className="card-title">Calls</h4>
                       <p className="card-text">Take a conversation from typing to face-to-face by starting a Slack voice or video call in any Channel or Direct Message.</p>
-                      <a className="fw-600 fs-12" href="#">Read more <i className="fa fa-chevron-right fs-9 pl-5" /></a>
+                      <a className="fw-600 fs-12" href>Read more <i className="fa fa-chevron-right fs-9 pl-5" /></a>
                     </div>
                   </div>
                 </div>
@@ -148,7 +148,7 @@ Get your branded site and mobile apps today!</p>
                 <h3 className="fw-900 mb-20">Reclaim your workday</h3>
                 <p className="lead text-muted">Less email. More productive. Our customers see an average 48.6% reduction in internal email, helping them enjoy a simpler, more pleasant, and more productive work life.</p>
                 <br />
-                <a className="btn btn-lg btn-round btn-success" href="#" data-scrollto="section-pricing">Start now</a>
+                <a className="btn btn-lg btn-round btn-success" href data-scrollto="section-pricing">Start now</a>
               </div>
             </div>
           </section>
@@ -175,7 +175,7 @@ Get your branded site and mobile apps today!</p>
                     <small>10 apps or service integrations</small><br />
                     <small>5GB total file storage for the team</small><br />
                     <br />
-                    <p className="text-center py-3"><a className="btn btn-primary" href="#">Get started</a></p>
+                    <p className="text-center py-3"><a className="btn btn-primary" href>Get started</a></p>
                   </div>
                 </div>
                 <div className="col-12 col-md-4">
@@ -188,7 +188,7 @@ Get your branded site and mobile apps today!</p>
                     <small>Unlimited apps and service integrations</small><br />
                     <small>10GB file storage per team member</small><br />
                     <br />
-                    <p className="text-center py-3"><a className="btn btn-success" href="#">Get started</a></p>
+                    <p className="text-center py-3"><a className="btn btn-success" href>Get started</a></p>
                   </div>
                 </div>
                 <div className="col-12 col-md-4">
@@ -201,7 +201,7 @@ Get your branded site and mobile apps today!</p>
                     <small>SAML-based single sign-on (SSO)</small><br />
                     <small>Compliance Exports of all messages</small><br />
                     <br />
-                    <p className="text-center py-3"><a className="btn btn-primary" href="#">Get started</a></p>
+                    <p className="text-center py-3"><a className="btn btn-primary" href>Get started</a></p>
                   </div>
                 </div>
               </div>
