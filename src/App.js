@@ -216,12 +216,12 @@ Get your branded site and mobile apps today!</p>
           <section className="section bg-gray py-40">
             <div className="container">
               <div className="partner partner-sm">
-                <img src="assets/img/partner-1.png" alt="..." />
-                <img src="assets/img/partner-2.png" alt="..." />
-                <img src="assets/img/partner-3.png" alt="..." />
-                <img src="assets/img/partner-4.png" alt="..." />
-                <img src="assets/img/partner-5.png" alt="..." />
-                <img src="assets/img/partner-6.png" alt="..." />
+                <img src={require('./img/partner-1.png')} alt="..." />
+                <img src={require('./img/partner-2.png')} alt="..." />
+                <img src={require('./img/partner-3.png')} alt="..." />
+                <img src={require('./img/partner-4.png')} alt="..." />
+                <img src={require('./img/partner-5.png')} alt="..." />
+                <img src={require('./img/partner-6.png')} alt="..." />
               </div>
             </div>
           </section>
