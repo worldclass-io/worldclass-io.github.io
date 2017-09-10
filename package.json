@@ -3,7 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "https://worldclass-io.github.io/build",
-  "devDependencies": {},
+  "devDependencies": {
+    "html-webpack-plugin": "^2.29.0",
+    "script-ext-html-webpack-plugin": "^1.8.5"
+  },
   "dependencies": {
     "autoprefixer": "7.1.2",
     "babel-core": "6.25.0",
