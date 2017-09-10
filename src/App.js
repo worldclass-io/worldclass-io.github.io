@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+
 import './App.css';
+import './css/react-tabs.css';
 
 const styles = {
   getStartedButton: {
@@ -11,7 +14,18 @@ const styles = {
   }
 }
 
+const tabs = [
+  "Mobile First",
+  "Integrations",
+  "Analytics",
+  "Customization",
+  "User Management"
+]
+
 class App extends Component {
+
+
+
   render() {
     return (
       <div>
@@ -114,7 +128,39 @@ class App extends Component {
                   <img src={require('./img/gateway-logos-small.png')} alt="Available gateways" />
                 </div>
               </div>
+
+              <hr/>
+
+              <div className="row gap-y align-items-center">
+                <div className="col-12 col-md-12">
+                  <Tabs>
+                    <TabList className="text-center" style={{marginBottom: 25}}>
+                      {
+                        tabs.map((t, i) => <Tab key={"t_" + i}>{t}</Tab>)
+                      }
+                    </TabList>
+
+                    {
+                      tabs.map((t, i) =>
+                        <TabPanel key={"tp_" + i}>
+                          <div className="row gap-y align-items-center">
+                            <div className="col-12 col-md-5 text-center">
+                              <img src={require('./img/tools.png')} alt="..." />
+                            </div>
+                            <div className="col-12 offset-md-1 col-md-6">
+                              <h2>{tabs[i]}</h2>
+                              <p>Nam et fermentum urna. Morbi dapibus lectus diam, ac viverra metus scelerisque at. Integer facilisis egestas semper. Aliquam facilisis, enim eget auctor placerat, enim ex dictum dui, id consectetur velit elit id nunc. Mauris eget dolor quis libero porttitor rutrum. Maecenas sed purus sed nulla dictum pellentesque. Pellentesque consequat nibh sed orci tempor interdum.</p>
+                            </div>
+                          </div>
+                        </TabPanel>
+                      )
+                    }
+
+                  </Tabs>
+                </div>
+              </div>
             </div>
+
           </section>
           {/*
       |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
