@@ -52,8 +52,6 @@ module.exports = {
     // We include the app code last so that if there is a runtime error during
     // initialization, it doesn't blow up the WebpackDevServer client, and
     // changing JS code would still trigger a refresh.
-    require.resolve('../public/assets/js/wcio.min.js'),
-    require.resolve('../public/assets/js/script.js'),
   ],
   output: {
     // Next line is not used in dev but WebpackDevServer crashes without it:
@@ -227,7 +225,7 @@ module.exports = {
       template: paths.appHtml,
     }),
     new ScriptExtHtmlWebpackPlugin({
-      defaultAttribute: 'async'
+      defaultAttribute: 'defer'
     }),
     // Add module names to factory functions so they appear in browser profiler.
     new webpack.NamedModulesPlugin(),
