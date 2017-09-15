@@ -97,7 +97,7 @@ class App extends Component {
               </header>
               <div className="row gap-y align-items-center">
                 <div className="col-12 col-md-5 text-center">
-                  <img src={require('./img/drag.png')} alt="..." />
+                  <img src={require('./img/drag.png')} alt="features" />
                 </div>
                 <div className="col-12 offset-md-1 col-md-6">
                   <h5>Drag & Drop Course Builder.</h5>
