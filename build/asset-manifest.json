@@ -1,13 +1,15 @@
 {
-  "main.css": "static/css/main.d91a3f52.css",
-  "main.css.map": "static/css/main.d91a3f52.css.map",
-  "main.js": "static/js/main.fa775d49.js",
-  "main.js.map": "static/js/main.fa775d49.js.map",
+  "main.css": "static/css/main.9af957f9.css",
+  "main.css.map": "static/css/main.9af957f9.css.map",
+  "main.js": "static/js/main.2649ba6f.js",
+  "main.js.map": "static/js/main.2649ba6f.js.map",
+  "static/media/credit-card.png": "static/media/credit-card.de3bb3e9.png",
   "static/media/cta.png": "static/media/cta.37153650.png",
   "static/media/dashboard2.jpg": "static/media/dashboard2.a04fb486.jpg",
-  "static/media/drag.png": "static/media/drag.3a730d2f.png",
+  "static/media/drag.png": "static/media/drag.4a37d910.png",
   "static/media/everywhere.png": "static/media/everywhere.c49b2a11.png",
+  "static/media/integrations.png": "static/media/integrations.47e0d965.png",
+  "static/media/mobile-first.png": "static/media/mobile-first.46845a1a.png",
   "static/media/payment-methods.png": "static/media/payment-methods.58673726.png",
-  "static/media/payment.png": "static/media/payment.b4626df0.png",
   "static/media/tools.png": "static/media/tools.cd476820.png"
 }

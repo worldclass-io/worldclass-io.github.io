@@ -22,6 +22,14 @@ const tabs = [
   "User Management"
 ]
 
+const tabImages = {
+  "Mobile First": <img style={{height: 270, width: 'auto'}} src={require('./img/mobile-first.png')} alt="..." />,
+"Integrations": <img style={{height: 270, width: 'auto'}} src={require('./img/integrations.png')} className="box-shadow" alt="..." />,
+  "Analytics": <img src={require('./img/tools.png')} alt="..." />,
+  "Customization": <img src={require('./img/tools.png')} alt="..." />,
+  "User Management": <img src={require('./img/tools.png')} alt="..." />
+}
+
 class App extends Component {
 
 
@@ -97,7 +105,7 @@ class App extends Component {
               </header>
               <div className="row gap-y align-items-center">
                 <div className="col-12 col-md-5 text-center">
-                  <img src={require('./img/drag.png')} alt="features" />
+                  <img src={require('./img/drag.png')} alt="Drag and drop" className="box-shadow" />
                 </div>
                 <div className="col-12 offset-md-1 col-md-6">
                   <h5>Drag & Drop Course Builder.</h5>
@@ -112,13 +120,13 @@ class App extends Component {
                   <p>Your users will get exact stats, progress reports and suggestions for what to practice next.</p>
                 </div>
                 <div className="col-12 offset-md-1 col-md-5 text-center">
-                  <img src={require('./img/everywhere.png')} alt="..." />
+                  <img src={require('./img/everywhere.png')} alt="" className="box-shadow" />
                 </div>
               </div>
               <hr className="w-200 my-90" />
               <div className="row gap-y align-items-center">
                 <div className="col-12 col-md-5 text-center">
-                  <img src={require('./img/payment.png')} alt="..." />
+                  <img src={require('./img/credit-card.png')} alt="..." />
                 </div>
                 <div className="col-12 offset-md-1 col-md-6">
                   <h5>Instant Payouts, No Comissions!</h5>
@@ -134,7 +142,7 @@ class App extends Component {
               <div className="row gap-y align-items-center">
                 <div className="col-12 col-md-12">
                   <Tabs>
-                    <TabList className="text-center" style={{marginBottom: 25}}>
+                    <TabList className="text-center" style={{marginBottom: 35}}>
                       {
                         tabs.map((t, i) => <Tab key={"t_" + i}>{t}</Tab>)
                       }
@@ -145,7 +153,7 @@ class App extends Component {
                         <TabPanel key={"tp_" + i}>
                           <div className="row gap-y align-items-center">
                             <div className="col-12 col-md-5 text-center">
-                              <img src={require('./img/tools.png')} alt="..." />
+                              {tabImages[tabs[i]]}
                             </div>
                             <div className="col-12 offset-md-1 col-md-6">
                               <h2>{tabs[i]}</h2>
