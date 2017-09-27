@@ -235,10 +235,10 @@ class App extends Component {
               <div className="row gap-y text-center">
                 <div className="col-12 col-md-4">
                   <div className="pricing-1">
-                    <p className="plan-name">Free</p>
+                    <p className="plan-name">PRO</p>
                     <br />
-                    <h2 className="price">free</h2>
-                    <p><small className="opacity-50">Forever!</small></p>
+                    <h2 className="price text-success"><span className="price-unit">$</span> 10</h2>
+                    <p><small className="opacity-50">Per month</small></p>
                     <small>Searchable messages up to 10K</small><br />
                     <small>10 apps or service integrations</small><br />
                     <small>5GB total file storage for the team</small><br />
@@ -248,10 +248,10 @@ class App extends Component {
                 </div>
                 <div className="col-12 col-md-4">
                   <div className="pricing-1">
-                    <p className="plan-name">Standard</p>
+                    <p className="plan-name">TEAM</p>
                     <br />
-                    <h2 className="price text-success"><span className="price-unit">$</span> 6.67</h2>
-                    <p><small className="opacity-50">Per user/month</small></p>
+                    <h2 className="price text-success"><span className="price-unit">$</span> 30</h2>
+                    <p><small className="opacity-50">Per month</small></p>
                     <small>Unlimited searchable message archives</small><br />
                     <small>Unlimited apps and service integrations</small><br />
                     <small>10GB file storage per team member</small><br />
@@ -260,11 +260,12 @@ class App extends Component {
                   </div>
                 </div>
                 <div className="col-12 col-md-4">
-                  <div className="pricing-1">
+                  <div className="pricing-1" style={{position: 'relative'}}>
                     <p className="plan-name">Plus</p>
                     <br />
-                    <h2 className="price"><span className="price-unit">$</span> 12.50</h2>
-                    <p><small className="opacity-50">Per user/month</small></p>
+                    <p style={{position: 'absolute', width: '100%', textAlign: 'center', marginTop: -5, color: '#aaa'}}>Starting at</p>
+                    <h2 className="price"><span className="price-unit">$</span> 200</h2>
+                    <p><small className="opacity-50">Per month</small></p>
                     <small>Everything in Free &amp; Standard, and</small><br />
                     <small>SAML-based single sign-on (SSO)</small><br />
                     <small>Compliance Exports of all messages</small><br />
