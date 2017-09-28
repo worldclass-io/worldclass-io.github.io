@@ -271,11 +271,14 @@ class App extends Component {
                 <div className="col-12 col-lg-4">
                   <div className="card card-bordered text-center testimonial">
                     <div className="card-block">
-                      <p className="card-text">Shopify has helped me grow my business amazingly. It’s been a pleasure because everything has been easier than I ever imagined.</p>
+                      <p className="card-text">It’s rare to find a good product backed by a good team.  It’s even rarer to find all of that backed by individuals who personally root for and work towards your and your company’s success.  Wordclass consistently delivers solid, evolving, consumer oriented products that have been essential for our exponential growth.  You’d be remiss to not at least have a conversation to see how they can be of use to your exsisting infrastructure.
+                        <br/><br/><br/>
+                      </p>
                     </div>
                     <div className="card-footer">
-                      <h5>Tina Roth Eisenberg</h5>
-                      <small>Designer, Founder of Tattly</small>
+                      <img className="person" src={require("./img/testimonials/bryan.jpg")} alt="Wysebridge" />
+                      <h5>Wysebridge, LLC</h5>
+                      <small><a href="http://www.wysebridge.com/">www.wysebridge.com</a></small>
                     </div>
                   </div>
                 </div>

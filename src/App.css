@@ -40,9 +40,19 @@
   color: #fff;
 }
 
+.testimonial .card-footer .person {
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+  height: 100px;
+  width: 100px;
+  margin-top: -60px;
+  margin-bottom: 20px;
+}
+
 .testimonial .card-footer h5 {
   margin: 0;
   color: #fff;
+  letter-spacing: inherit;
 }
 
 .testimonial .card-footer small {
