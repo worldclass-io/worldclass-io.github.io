@@ -28,7 +28,7 @@ const tabs = [
 const tabImages = {
   "Mobile First": <img style={{height: TAB_IMAGE_HEIGHT, width: 'auto'}} src={require('./img/mobile-first.png')} alt="..." />,
   "Integrations": <img style={{height: TAB_IMAGE_HEIGHT, width: 'auto'}} src={require('./img/integrations.png')} alt="..." />,
-  "Analytics": <img src={require('./img/tools.png')} alt="..." />,
+"Analytics": <img style={{height: TAB_IMAGE_HEIGHT, width: 'auto'}} src={require('./img/analytics.png')} alt="..." />,
   "Customization": <img src={require('./img/tools.png')} alt="..." />,
 "User Management": <img style={{height: TAB_IMAGE_HEIGHT, width: 'auto'}} src={require('./img/user-management.png')} alt="..." />,
 }
