@@ -1,8 +1,8 @@
 {
-  "main.css": "static/css/main.9af957f9.css",
-  "main.css.map": "static/css/main.9af957f9.css.map",
-  "main.js": "static/js/main.96e1546b.js",
-  "main.js.map": "static/js/main.96e1546b.js.map",
+  "main.css": "static/css/main.7184dc85.css",
+  "main.css.map": "static/css/main.7184dc85.css.map",
+  "main.js": "static/js/main.103a3430.js",
+  "main.js.map": "static/js/main.103a3430.js.map",
   "static/media/analytics.png": "static/media/analytics.f35c9c96.png",
   "static/media/credit-card.png": "static/media/credit-card.012e337a.png",
   "static/media/cta.png": "static/media/cta.37153650.png",
@@ -13,5 +13,6 @@
   "static/media/integrations.png": "static/media/integrations.f9af82b1.png",
   "static/media/mobile-first.png": "static/media/mobile-first.be50fb11.png",
   "static/media/payment-methods.png": "static/media/payment-methods.58673726.png",
-  "static/media/user-management.png": "static/media/user-management.49ab7e2a.png"
+  "static/media/user-management.png": "static/media/user-management.49ab7e2a.png",
+  "static/media/worldmap.png": "static/media/worldmap.86a2a7eb.png"
 }

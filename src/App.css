@@ -18,6 +18,34 @@
   font-size: large;
 }
 
+.worldmap-bg {
+  background: url('./img/worldmap.png') no-repeat center center;
+  background-size: contain;
+}
+
+.testimonial {
+  -webkit-box-shadow: 0 0 20px 0 rgba(0,0,0,.5);
+  box-shadow: 0 0 20px 0 rgba(0,0,0,.5);
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border: none;
+}
+
+.testimonial .card-footer {
+  line-height: 1;
+  background-color: #46da60;
+}
+
+.testimonial .card-footer h5 {
+  margin: 0;
+  color: #fff;
+}
+
+.testimonial .card-footer small {
+  margin-bottom: 5px;
+  color: #f6f6f6;
+}
+
 .box-shadow {
   -webkit-box-shadow: 0 0 15px 0 rgba(0,0,0,.4);
   box-shadow: 0 0 15px 0 rgba(0,0,0,.4);

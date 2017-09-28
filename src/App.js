@@ -201,11 +201,11 @@ class App extends Component {
       | Features
       |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
       !*/}
-          <section className="section bg-gray">
+          {/*<section className="section">
             <div className="container">
               <div className="row gap-y">
                 <div className="col-12 col-lg-4">
-                  <div className="card card-bordered text-center">
+                  <div className="card card-bordered text-center bg-gray">
                     <div className="card-block">
                       <p><i className="icon-layers fs-50 text-muted" /></p>
                       <h4 className="card-title">Channels</h4>
@@ -215,7 +215,7 @@ class App extends Component {
                   </div>
                 </div>
                 <div className="col-12 col-lg-4">
-                  <div className="card card-bordered text-center">
+                  <div className="card card-bordered text-center bg-gray">
                     <div className="card-block">
                       <p><i className="icon-chat fs-50 text-muted" /></p>
                       <h4 className="card-title">Direct Messages</h4>
@@ -225,7 +225,7 @@ class App extends Component {
                   </div>
                 </div>
                 <div className="col-12 col-lg-4">
-                  <div className="card card-bordered text-center">
+                  <div className="card card-bordered text-center bg-gray">
                     <div className="card-block">
                       <p><i className="icon-mic fs-50 text-muted" /></p>
                       <h4 className="card-title">Calls</h4>
@@ -236,23 +236,63 @@ class App extends Component {
                 </div>
               </div>
             </div>
-          </section>
+          </section>*/}
           {/*
       |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
       | Reclaim your workday
       |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
       !*/}
-          <section className="section text-center">
+
+          <section className="section text-center worldmap-bg" id="section-testimonials" name="section-testimonials">
+            <div className="container">
+              <header className="section-header">
+                <small>Testimonials</small>
+                <h2>What our customers are saying</h2>
+              </header>
+            </div>
             <div className="row">
               <div className="col-12 offset-md-3 col-md-6">
                 <p><img src={require('./img/cta.png')} alt="..." /></p>
-                <br />
-                <h3 className="fw-900 mb-20">Reclaim your workday</h3>
-                <p className="lead text-muted">Less email. More productive. Our customers see an average 48.6% reduction in internal email, helping them enjoy a simpler, more pleasant, and more productive work life.</p>
-                <br />
-                <a className="btn btn-lg btn-round btn-success" href data-scrollto="section-pricing">Start now</a>
               </div>
             </div>
+            <div className="container">
+              <div className="row gap-y">
+                <div className="col-12 col-lg-4">
+                  <div className="card card-bordered text-center testimonial">
+                    <div className="card-block">
+                      <p className="card-text">I am seriously happy about running our store on Shopify. Powerful features and easy to set up, running an online store shouldn’t be this much fun!</p>
+                    </div>
+                    <div className="card-footer">
+                      <h5>Tina Roth Eisenberg</h5>
+                      <small>Designer, Founder of Tattly</small>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-12 col-lg-4">
+                  <div className="card card-bordered text-center testimonial">
+                    <div className="card-block">
+                      <p className="card-text">Shopify has helped me grow my business amazingly. It’s been a pleasure because everything has been easier than I ever imagined.</p>
+                    </div>
+                    <div className="card-footer">
+                      <h5>Tina Roth Eisenberg</h5>
+                      <small>Designer, Founder of Tattly</small>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-12 col-lg-4">
+                  <div className="card card-bordered text-center testimonial">
+                    <div className="card-block">
+                      <p className="card-text">The best thing about Shopify is that it’s made me not have to worry about anything that has to do with ecommerce. asdak jshdak sjdhak sjdha </p>
+                    </div>
+                    <div className="card-footer">
+                      <h5>Tina Roth Eisenberg</h5>
+                      <small>Designer, Founder of Tattly</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </section>
           {/*
       |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
