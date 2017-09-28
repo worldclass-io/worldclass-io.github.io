@@ -55,7 +55,7 @@ class App extends Component {
                 <li className="nav-item"><a className="nav-link" href data-scrollto="section-features">Features</a></li>
                 <li className="nav-item"><a className="nav-link" href data-scrollto="section-testimonials">Testimonials</a></li>
                 <li className="nav-item"><a className="nav-link" href data-scrollto="section-pricing">Pricing</a></li>
-                <li className="nav-item"><a className="nav-link" href="https://studio.worldclass.io/#/login">Sign in</a></li>
+                <li className="nav-item"><a className="nav-link" href="https://studio.worldclass.io/#/login" target="_blank">Sign in</a></li>
                 <li>
                   <a className="btn btn-lg btn-primary"
                     style={styles.getStartedButton}
@@ -259,9 +259,10 @@ class App extends Component {
                 <div className="col-12 col-lg-4">
                   <div className="card card-bordered text-center testimonial">
                     <div className="card-block">
-                      <p className="card-text">Worldclass has enabled me to achieve something I had only dreamed of- creating and selling my own course online.  It was easier than I expected! The best part was how helpful and involved the team at Worldclass are.  Unbelievable customer service.  Customers love the mobile App that was custom designed for my course. Highly recommended for anyone who needs a easy solution that is professional, clean and simple to use and provides the ability to customize almost everything!</p>
+                      <p className="card-text">Worldclass has enabled me to achieve something I had only dreamed of- creating and selling my own course online.  It was easier than I expected! Unbelievable customer service.</p>
                     </div>
                     <div className="card-footer">
+                      <img className="person" src={require("./img/testimonials/bryan.jpg")} alt="Wysebridge" />
                       <h5>Applicant Coaching Services</h5>
                       <small><a href="http://www.applicantcoaching.ca/police-pati-test.html">www.applicantcoaching.ca</a></small>
                     </div>
@@ -270,9 +271,7 @@ class App extends Component {
                 <div className="col-12 col-lg-4">
                   <div className="card card-bordered text-center testimonial">
                     <div className="card-block">
-                      <p className="card-text">It’s rare to find a good product backed by a good team.  It’s even rarer to find all of that backed by individuals who personally root for and work towards your and your company’s success.  Wordclass consistently delivers solid, evolving, consumer oriented products that have been essential for our exponential growth.  You’d be remiss to not at least have a conversation to see how they can be of use to your exsisting infrastructure.
-                        <br/><br/><br/>
-                      </p>
+                      <p className="card-text">It’s rare to find a good product backed by a good team.  It’s even rarer to find all of that backed by individuals who personally root for and work towards your and your company’s success.</p>
                     </div>
                     <div className="card-footer">
                       <img className="person" src={require("./img/testimonials/bryan.jpg")} alt="Wysebridge" />
@@ -284,9 +283,10 @@ class App extends Component {
                 <div className="col-12 col-lg-4">
                   <div className="card card-bordered text-center testimonial">
                     <div className="card-block">
-                      <p className="card-text">The best thing about Shopify is that it’s made me not have to worry about anything that has to do with ecommerce. asdak jshdak sjdhak sjdha </p>
+                      <p className="card-text">Worldclass has enabled me to achieve something I had only dreamed of- creating and selling my own course online.  It was easier than I expected! Unbelievable customer service.</p>
                     </div>
                     <div className="card-footer">
+                      <img className="person" src={require("./img/testimonials/bryan.jpg")} alt="Wysebridge" />
                       <h5>Tina Roth Eisenberg</h5>
                       <small>Designer, Founder of Tattly</small>
                     </div>

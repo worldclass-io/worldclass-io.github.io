@@ -40,6 +40,9 @@
   color: #fff;
 }
 
+.testimonial p.card-text {
+  margin-bottom: 35px;
+}
 .testimonial .card-footer .person {
   -webkit-border-radius: 100px;
   border-radius: 100px;
