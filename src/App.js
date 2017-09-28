@@ -41,8 +41,7 @@ You can also publish your own branded mobile apps with us and get full control o
     image: (<img style={{height: TAB_IMAGE_HEIGHT, width: 'auto'}} src={require('./img/integrations.png')} alt="..." />),
     text: (
       <p>Connect your academy to over 500 other web apps! Integrate with google docs, sheets, Salesforce, Mailchimp or any other software you’re using to promote and track your business.
-
-Target users with individualized emails and discounts, build dashboards or create sophisticated onboarding flows - the only limit is your imagination!</p>
+        <br/><br/>Target users with individualized emails and discounts, build dashboards or create sophisticated onboarding flows - the only limit is your imagination!</p>
     )
   },
   "Analytics": {
@@ -60,7 +59,7 @@ Beyond aggregated reports, you and your team can also see individual users’ pe
       <p>
         Get full control over your academy’s look and feel.
 Use our built-in editor to include logos, change colours and layouts and if you happen to code, you can use our CSS and HTML editor to redesign the interface as you see fit. You can use your own custom domain or buy one from us.
-WorldClass is 100% white-label and is completely transparent to your users.
+<b>WorldClass is 100% white-label</b> and is completely transparent to your users.
       </p>
     )
   },
@@ -291,12 +290,18 @@ class App extends Component {
             <div className="container">
               <header className="section-header">
                 <small>Testimonials</small>
-                <h2>What our customers are saying</h2>
+                <h2>WorldClass powers educators and entrepreneurs around the world</h2>
               </header>
             </div>
             <div className="row">
-              <div className="col-12 offset-md-3 col-md-6">
+              <div className="col-12 col-md-3">
+                {/* TODO: add stat */}
+              </div>
+              <div className="col-12 col-md-6">
                 <p><img src={require('./img/cta.png')} alt="..." /></p>
+              </div>
+              <div className="col-12 col-md-3">
+                {/* TODO: add stat */}
               </div>
             </div>
             <div className="container">
