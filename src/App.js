@@ -25,12 +25,55 @@ const tabs = [
 ]
 
 
-const tabImages = {
-  "Mobile First": <img style={{height: TAB_IMAGE_HEIGHT, width: 'auto'}} src={require('./img/mobile-first.png')} alt="..." />,
-  "Integrations": <img style={{height: TAB_IMAGE_HEIGHT, width: 'auto'}} src={require('./img/integrations.png')} alt="..." />,
-  "Analytics": <img style={{height: TAB_IMAGE_HEIGHT, width: 'auto'}} src={require('./img/analytics.png')} alt="..." />,
-"Customization": <img style={{height: TAB_IMAGE_HEIGHT, width: 'auto'}} src={require('./img/customization.png')} alt="..." />,
-  "User Management": <img style={{height: TAB_IMAGE_HEIGHT, width: 'auto'}} src={require('./img/user-management.png')} alt="..." />,
+const tabData = {
+  "Mobile First": {
+    image: (<img style={{height: TAB_IMAGE_HEIGHT, width: 'auto'}} src={require('./img/mobile-first.png')} alt="..." />),
+    text: (
+      <p>
+        Let your users take their courses on the go with our iOS and Android apps [add app store, play store images and links].
+Full support for HD video streaming across devices, advanced assessments, gamification and more.
+You can also publish your own branded mobile apps with us and get full control over your app’s branding, pricing and access.
+
+      </p>
+    )
+  },
+  "Integrations": {
+    image: (<img style={{height: TAB_IMAGE_HEIGHT, width: 'auto'}} src={require('./img/integrations.png')} alt="..." />),
+    text: (
+      <p>Connect your academy to over 500 other web apps! Integrate with google docs, sheets, Salesforce, Mailchimp or any other software you’re using to promote and track your business.
+
+Target users with individualized emails and discounts, build dashboards or create sophisticated onboarding flows - the only limit is your imagination!</p>
+    )
+  },
+  "Analytics": {
+    image: (<img style={{height: TAB_IMAGE_HEIGHT, width: 'auto'}} src={require('./img/analytics.png')} alt="..." />),
+    text: (
+      <p>
+        Get full activity reports and detailed timeline of every single user, group and course in your academy.
+Beyond aggregated reports, you and your team can also see individual users’ performance and review their actual assessments down to the most granular level.
+      </p>
+    )
+  },
+  "Customization": {
+    image: (<img style={{height: TAB_IMAGE_HEIGHT, width: 'auto'}} src={require('./img/customization.png')} alt="..." />),
+    text: (
+      <p>
+        Get full control over your academy’s look and feel.
+Use our built-in editor to include logos, change colours and layouts and if you happen to code, you can use our CSS and HTML editor to redesign the interface as you see fit. You can use your own custom domain or buy one from us.
+WorldClass is 100% white-label and is completely transparent to your users.
+      </p>
+    )
+  },
+  "User Management": {
+    image: (<img style={{height: TAB_IMAGE_HEIGHT, width: 'auto'}} src={require('./img/user-management.png')} alt="..." />),
+    text: (
+      <p>
+        Set your academy to private or public.
+Make it ‘invite only’ or open for self-signups. Invite your staff and other admins to collaborate online.
+Assign users to groups and control exactly what courses are open to them and when. Our advanced users management module can support your use case whether it’s top-secret enterprise training, a marketplace or an open to all online course
+      </p>
+    )
+  }
 }
 
 class App extends Component {
@@ -55,9 +98,11 @@ class App extends Component {
                 <li className="nav-item"><a className="nav-link" href data-scrollto="section-features">Features</a></li>
                 <li className="nav-item"><a className="nav-link" href data-scrollto="section-testimonials">Testimonials</a></li>
                 <li className="nav-item"><a className="nav-link" href data-scrollto="section-pricing">Pricing</a></li>
-                <li className="nav-item"><a className="nav-link" href="https://studio.worldclass.io/#/login" target="_blank">Sign in</a></li>
+                <li className="nav-item"><a className="nav-link" href="https://studio.worldclass.io/#/login" rel="noopener noreferrer" target="_blank">Sign in</a></li>
                 <li>
                   <a className="btn btn-lg btn-primary"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     style={styles.getStartedButton}
                     href="https://studio.worldclass.io/#/signup">Launch an Academy</a>
                 </li>
@@ -136,13 +181,13 @@ class App extends Component {
                   <img src={require('./img/payment-methods.png')} alt="Available payment methods" />
                   <hr style={{margin: '1rem auto'}}/>
 
-                  <a href="https://stripe.com" target="_blank">
+                  <a href="https://stripe.com" target="_blank" rel="noopener noreferrer">
                     <img src={require('./img/logo-stripe.png')} alt="Stripe logo" style={{height: 20, marginRight: 20}} />
                   </a>
-                  <a href="https://www.paypal.com" target="_blank">
+                  <a href="https://www.paypal.com" target="_blank" rel="noopener noreferrer">
                     <img src={require('./img/logo-paypal.png')} alt="PayPal logo" style={{height: 20, marginRight: 20}} />
                   </a>
-                  <a href="https://www.instamojo.com/" target="_blank">
+                  <a href="https://www.instamojo.com/" target="_blank" rel="noopener noreferrer">
                     <img src={require('./img/logo-instamojo.png')} alt="Instamojo logo" style={{height: 20}} />
                   </a>
                 </div>
@@ -177,11 +222,11 @@ class App extends Component {
                         <TabPanel key={"tp_" + i}>
                           <div className="row gap-y align-items-center">
                             <div className="col-12 col-md-6 text-center">
-                              {tabImages[tabs[i]]}
+                              {tabData[tabs[i]].image}
                             </div>
                             <div className="col-12 offset-md-1 col-md-5">
                               <h2>{tabs[i]}</h2>
-                              <p>Nam et fermentum urna. Morbi dapibus lectus diam, ac viverra metus scelerisque at. Integer facilisis egestas semper. Aliquam facilisis, enim eget auctor placerat, enim ex dictum dui, id consectetur velit elit id nunc. Mauris eget dolor quis libero porttitor rutrum. Maecenas sed purus sed nulla dictum pellentesque. Pellentesque consequat nibh sed orci tempor interdum.</p>
+                              {tabData[tabs[i]].text}
                             </div>
                           </div>
                         </TabPanel>
