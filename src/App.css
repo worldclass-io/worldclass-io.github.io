@@ -33,7 +33,11 @@
 
 .testimonial .card-footer {
   line-height: 1;
-  background-color: #46da60;
+  background-color: #0facf3;
+}
+
+.testimonial .card-footer a {
+  color: #fff;
 }
 
 .testimonial .card-footer h5 {

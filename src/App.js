@@ -58,7 +58,7 @@ class App extends Component {
                 <li className="nav-item"><a className="nav-link" href data-scrollto="section-help">Help</a></li>
                 <li className="nav-item"><a className="nav-link" href="https://studio.worldclass.io/#/login">Sign in</a></li>
                 <li>
-                  <a className="btn btn-lg btn-success"
+                  <a className="btn btn-lg btn-primary"
                     style={styles.getStartedButton}
                     href="https://studio.worldclass.io/#/signup">Launch an Academy</a>
                 </li>
@@ -82,7 +82,7 @@ class App extends Component {
                 <br />
                 <p className="lead mx-auto" />
                 <br />
-                <a className="btn btn-lg btn-success" href="https://studio.worldclass.io/#/signup">Get Started</a>
+                <a className="btn btn-lg btn-primary" href="https://studio.worldclass.io/#/signup">Get Started</a>
                 <p className="pt-8"><small>Already have an account? <a className="text-muted" href="page-login.html">Sign in</a></small></p>
               </div>
               <div className="col-12 col-lg-6 offset-lg-1 img-outside-right hidden-md-down">
@@ -260,11 +260,11 @@ class App extends Component {
                 <div className="col-12 col-lg-4">
                   <div className="card card-bordered text-center testimonial">
                     <div className="card-block">
-                      <p className="card-text">I am seriously happy about running our store on Shopify. Powerful features and easy to set up, running an online store shouldn’t be this much fun!</p>
+                      <p className="card-text">Worldclass has enabled me to achieve something I had only dreamed of- creating and selling my own course online.  It was easier than I expected! The best part was how helpful and involved the team at Worldclass are.  Unbelievable customer service.  Customers love the mobile App that was custom designed for my course. Highly recommended for anyone who needs a easy solution that is professional, clean and simple to use and provides the ability to customize almost everything!</p>
                     </div>
                     <div className="card-footer">
-                      <h5>Tina Roth Eisenberg</h5>
-                      <small>Designer, Founder of Tattly</small>
+                      <h5>Applicant Coaching Services</h5>
+                      <small><a href="http://www.applicantcoaching.ca/police-pati-test.html">www.applicantcoaching.ca</a></small>
                     </div>
                   </div>
                 </div>
@@ -311,7 +311,7 @@ class App extends Component {
                   <div className="pricing-1">
                     <p className="plan-name">PRO</p>
                     <br />
-                    <h2 className="price text-success"><span className="price-unit">$</span> 10</h2>
+                    <h2 className="price text-primary"><span className="price-unit">$</span> 10</h2>
                     <p><small className="opacity-50">Per month</small></p>
                     <small>Searchable messages up to 10K</small><br />
                     <small>10 apps or service integrations</small><br />
@@ -324,13 +324,13 @@ class App extends Component {
                   <div className="pricing-1">
                     <p className="plan-name">TEAM</p>
                     <br />
-                    <h2 className="price text-success"><span className="price-unit">$</span> 30</h2>
+                    <h2 className="price text-primary"><span className="price-unit">$</span> 30</h2>
                     <p><small className="opacity-50">Per month</small></p>
                     <small>Unlimited searchable message archives</small><br />
                     <small>Unlimited apps and service integrations</small><br />
                     <small>10GB file storage per team member</small><br />
                     <br />
-                    <p className="text-center py-3"><a className="btn btn-success" href>Get started</a></p>
+                    <p className="text-center py-3"><a className="btn btn-primary" href>Get started</a></p>
                   </div>
                 </div>
                 <div className="col-12 col-md-4">
