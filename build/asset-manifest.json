@@ -1,15 +1,16 @@
 {
   "main.css": "static/css/main.9af957f9.css",
   "main.css.map": "static/css/main.9af957f9.css.map",
-  "main.js": "static/js/main.b6d2ce81.js",
-  "main.js.map": "static/js/main.b6d2ce81.js.map",
+  "main.js": "static/js/main.054fd6c3.js",
+  "main.js.map": "static/js/main.054fd6c3.js.map",
   "static/media/credit-card.png": "static/media/credit-card.de3bb3e9.png",
   "static/media/cta.png": "static/media/cta.37153650.png",
   "static/media/dashboard2.jpg": "static/media/dashboard2.a04fb486.jpg",
   "static/media/drag.png": "static/media/drag.4a37d910.png",
   "static/media/everywhere.png": "static/media/everywhere.c49b2a11.png",
-  "static/media/integrations.png": "static/media/integrations.47e0d965.png",
+  "static/media/integrations.png": "static/media/integrations.f9af82b1.png",
   "static/media/mobile-first.png": "static/media/mobile-first.be50fb11.png",
   "static/media/payment-methods.png": "static/media/payment-methods.58673726.png",
-  "static/media/tools.png": "static/media/tools.cd476820.png"
+  "static/media/tools.png": "static/media/tools.cd476820.png",
+  "static/media/user-management.png": "static/media/user-management.49ab7e2a.png"
 }

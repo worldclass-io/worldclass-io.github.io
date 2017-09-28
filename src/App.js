@@ -27,10 +27,10 @@ const tabs = [
 
 const tabImages = {
   "Mobile First": <img style={{height: TAB_IMAGE_HEIGHT, width: 'auto'}} src={require('./img/mobile-first.png')} alt="..." />,
-  "Integrations": <img style={{height: TAB_IMAGE_HEIGHT, width: 'auto'}} src={require('./img/integrations.png')} className="box-shadow" alt="..." />,
+  "Integrations": <img style={{height: TAB_IMAGE_HEIGHT, width: 'auto'}} src={require('./img/integrations.png')} alt="..." />,
   "Analytics": <img src={require('./img/tools.png')} alt="..." />,
   "Customization": <img src={require('./img/tools.png')} alt="..." />,
-  "User Management": <img src={require('./img/tools.png')} alt="..." />
+"User Management": <img style={{height: TAB_IMAGE_HEIGHT, width: 'auto'}} src={require('./img/user-management.png')} alt="..." />,
 }
 
 class App extends Component {
@@ -144,6 +144,11 @@ class App extends Component {
 
           </section>
 
+          {/*
+          |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+          | Tabs
+          |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+          !*/}
           <section className="section bg-gray">
             <div className="container">
               <div className="row gap-y align-items-center">
@@ -151,7 +156,11 @@ class App extends Component {
                   <Tabs>
                     <TabList className="text-center" style={{marginBottom: 50}}>
                       {
-                        tabs.map((t, i) => <Tab key={"t_" + i}>{t}</Tab>)
+                        tabs.map((t, i) => <Tab key={"t_" + i} style={{
+                          cursor: 'pointer'
+                        }}>
+                          {t}
+                        </Tab>)
                       }
                     </TabList>
 
