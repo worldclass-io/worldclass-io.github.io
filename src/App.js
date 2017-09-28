@@ -129,7 +129,7 @@ class App extends Component {
               <hr className="w-200 my-90" />
               <div className="row gap-y align-items-center">
                 <div className="col-12 col-md-5 text-center">
-                  <img src={require('./img/credit-card.png')} alt="..." />
+                  <img src={require('./img/credit-card.png')} style={{height: 250}} alt="..." />
                 </div>
                 <div className="col-12 offset-md-1 col-md-6">
                   <h5>Instant Payouts, No Comissions!</h5>
