@@ -53,9 +53,8 @@ class App extends Component {
               <ul className="topbar-nav nav">
                 <li className="nav-item"><a className="nav-link" href data-scrollto="home">Home</a></li>
                 <li className="nav-item"><a className="nav-link" href data-scrollto="section-features">Features</a></li>
+                <li className="nav-item"><a className="nav-link" href data-scrollto="section-testimonials">Testimonials</a></li>
                 <li className="nav-item"><a className="nav-link" href data-scrollto="section-pricing">Pricing</a></li>
-                <li className="nav-item"><a className="nav-link" href data-scrollto="section-faq">FAQ</a></li>
-                <li className="nav-item"><a className="nav-link" href data-scrollto="section-help">Help</a></li>
                 <li className="nav-item"><a className="nav-link" href="https://studio.worldclass.io/#/login">Sign in</a></li>
                 <li>
                   <a className="btn btn-lg btn-primary"
