@@ -14,6 +14,8 @@ const styles = {
   }
 }
 
+const TAB_IMAGE_HEIGHT = 330
+
 const tabs = [
   "Mobile First",
   "Integrations",
@@ -22,9 +24,10 @@ const tabs = [
   "User Management"
 ]
 
+
 const tabImages = {
-  "Mobile First": <img style={{height: 270, width: 'auto'}} src={require('./img/mobile-first.png')} alt="..." />,
-"Integrations": <img style={{height: 270, width: 'auto'}} src={require('./img/integrations.png')} className="box-shadow" alt="..." />,
+  "Mobile First": <img style={{height: TAB_IMAGE_HEIGHT, width: 'auto'}} src={require('./img/mobile-first.png')} alt="..." />,
+  "Integrations": <img style={{height: TAB_IMAGE_HEIGHT, width: 'auto'}} src={require('./img/integrations.png')} className="box-shadow" alt="..." />,
   "Analytics": <img src={require('./img/tools.png')} alt="..." />,
   "Customization": <img src={require('./img/tools.png')} alt="..." />,
   "User Management": <img src={require('./img/tools.png')} alt="..." />
@@ -137,12 +140,16 @@ class App extends Component {
                 </div>
               </div>
 
-              <hr/>
+            </div>
 
+          </section>
+
+          <section className="section bg-gray">
+            <div className="container">
               <div className="row gap-y align-items-center">
                 <div className="col-12 col-md-12">
                   <Tabs>
-                    <TabList className="text-center" style={{marginBottom: 35}}>
+                    <TabList className="text-center" style={{marginBottom: 50}}>
                       {
                         tabs.map((t, i) => <Tab key={"t_" + i}>{t}</Tab>)
                       }
@@ -152,10 +159,10 @@ class App extends Component {
                       tabs.map((t, i) =>
                         <TabPanel key={"tp_" + i}>
                           <div className="row gap-y align-items-center">
-                            <div className="col-12 col-md-5 text-center">
+                            <div className="col-12 col-md-6 text-center">
                               {tabImages[tabs[i]]}
                             </div>
-                            <div className="col-12 offset-md-1 col-md-6">
+                            <div className="col-12 offset-md-1 col-md-5">
                               <h2>{tabs[i]}</h2>
                               <p>Nam et fermentum urna. Morbi dapibus lectus diam, ac viverra metus scelerisque at. Integer facilisis egestas semper. Aliquam facilisis, enim eget auctor placerat, enim ex dictum dui, id consectetur velit elit id nunc. Mauris eget dolor quis libero porttitor rutrum. Maecenas sed purus sed nulla dictum pellentesque. Pellentesque consequat nibh sed orci tempor interdum.</p>
                             </div>
@@ -168,8 +175,9 @@ class App extends Component {
                 </div>
               </div>
             </div>
-
           </section>
+
+
           {/*
       |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
       | Features
