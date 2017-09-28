@@ -28,9 +28,9 @@ const tabs = [
 const tabImages = {
   "Mobile First": <img style={{height: TAB_IMAGE_HEIGHT, width: 'auto'}} src={require('./img/mobile-first.png')} alt="..." />,
   "Integrations": <img style={{height: TAB_IMAGE_HEIGHT, width: 'auto'}} src={require('./img/integrations.png')} alt="..." />,
-"Analytics": <img style={{height: TAB_IMAGE_HEIGHT, width: 'auto'}} src={require('./img/analytics.png')} alt="..." />,
-  "Customization": <img src={require('./img/tools.png')} alt="..." />,
-"User Management": <img style={{height: TAB_IMAGE_HEIGHT, width: 'auto'}} src={require('./img/user-management.png')} alt="..." />,
+  "Analytics": <img style={{height: TAB_IMAGE_HEIGHT, width: 'auto'}} src={require('./img/analytics.png')} alt="..." />,
+"Customization": <img style={{height: TAB_IMAGE_HEIGHT, width: 'auto'}} src={require('./img/customization.png')} alt="..." />,
+  "User Management": <img style={{height: TAB_IMAGE_HEIGHT, width: 'auto'}} src={require('./img/user-management.png')} alt="..." />,
 }
 
 class App extends Component {
@@ -136,7 +136,16 @@ class App extends Component {
                   <p>Integrate with your Stripe, Paypal or Instamojo account and collect payments from your users around the world. Funds are transferred directly to your account with no added sales commission.</p>
                   <img src={require('./img/payment-methods.png')} alt="Available payment methods" />
                   <hr style={{margin: '1rem auto'}}/>
-                  <img src={require('./img/gateway-logos-small.png')} alt="Available gateways" />
+
+                  <a href="https://stripe.com" target="_blank">
+                    <img src={require('./img/logo-stripe.png')} alt="Stripe logo" style={{height: 20, marginRight: 20}} />
+                  </a>
+                  <a href="https://www.paypal.com" target="_blank">
+                    <img src={require('./img/logo-paypal.png')} alt="PayPal logo" style={{height: 20, marginRight: 20}} />
+                  </a>
+                  <a href="https://www.instamojo.com/" target="_blank">
+                    <img src={require('./img/logo-instamojo.png')} alt="Instamojo logo" style={{height: 20}} />
+                  </a>
                 </div>
               </div>
 
