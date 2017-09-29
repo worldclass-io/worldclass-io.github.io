@@ -293,15 +293,17 @@ class App extends Component {
                 <h2>WorldClass powers educators and entrepreneurs around the world</h2>
               </header>
             </div>
-            <div className="row">
-              <div className="col-12 col-md-3">
-                {/* TODO: add stat */}
-              </div>
-              <div className="col-12 col-md-6">
-                <p><img src={require('./img/cta.png')} alt="..." /></p>
-              </div>
-              <div className="col-12 col-md-3">
-                {/* TODO: add stat */}
+            <div className="container">
+              <div className="row" style={{marginBottom: 30}}>
+                <div className="col-12 col-md-4 stat stat">
+                  <h3 className="text-primary">10,000+<br/><small>Active Academies</small></h3>
+                </div>
+                <div className="col-12 col-md-4 stat stat">
+                  <h3 className="text-primary">10,000+<br/><small>Active Academies</small></h3>
+                </div>
+                <div className="col-12 col-md-4 stat stat">
+                  <h3 className="text-primary">10,000+<br/><small>Active Academies</small></h3>
+                </div>
               </div>
             </div>
             <div className="container">

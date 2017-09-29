@@ -18,6 +18,18 @@
   font-size: large;
 }
 
+#section-testimonials .stat h3 {
+  font-size: 32px;
+  line-height: 0.7;
+}
+
+#section-testimonials .stat h3 small {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #666;
+  font-weight: bold;
+}
+
 .worldmap-bg {
   background: url('./img/worldmap.png') no-repeat center center;
   background-size: contain;
