@@ -64,15 +64,28 @@
   margin-bottom: 20px;
 }
 
+.testimonial .card-footer h3 {
+  font-size: 15px;
+  letter-spacing: 0;
+  color: #fff;
+  margin: 0;
+  line-height: 1;
+  font-weight: 300;
+}
+
 .testimonial .card-footer h5 {
   margin: 0;
   color: #fff;
   letter-spacing: inherit;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 1.7;
 }
 
 .testimonial .card-footer small {
   margin-bottom: 5px;
   color: #f6f6f6;
+  font-weight: 300;
 }
 
 .box-shadow {

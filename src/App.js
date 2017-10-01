@@ -361,6 +361,7 @@ class App extends Component {
                     </div>
                     <div className="card-footer">
                       <img className="person" src={require("./img/testimonials/bryan.jpg")} alt="Wysebridge" />
+                      <h3>Wile E. Coyote, Founder and CEO</h3>
                       <h5>Applicant Coaching Services</h5>
                       <small><a href="http://www.applicantcoaching.ca/police-pati-test.html">www.applicantcoaching.ca</a></small>
                     </div>
@@ -373,6 +374,7 @@ class App extends Component {
                     </div>
                     <div className="card-footer">
                       <img className="person" src={require("./img/testimonials/bryan.jpg")} alt="Wysebridge" />
+                      <h3>Wile E. Coyote, Founder and CEO</h3>
                       <h5>Wysebridge, LLC</h5>
                       <small><a href="http://www.wysebridge.com/">www.wysebridge.com</a></small>
                     </div>
@@ -385,6 +387,7 @@ class App extends Component {
                     </div>
                     <div className="card-footer">
                       <img className="person" src={require("./img/testimonials/bryan.jpg")} alt="Wysebridge" />
+                      <h3>Wile E. Coyote, Founder and CEO</h3>
                       <h5>Tina Roth Eisenberg</h5>
                       <small>Designer, Founder of Tattly</small>
                     </div>
@@ -402,35 +405,43 @@ class App extends Component {
           <section className="section bg-gray" id="section-pricing" name="section-pricing">
             <div className="container">
               <header className="section-header">
-                <h2>Affordable Pricing</h2>
+                <h2>Plans to match your needs and budget</h2>
                 <hr />
-                <p className="lead">Slack for Teams is a single workspace for your small- to medium-sized company or team.</p>
+                <p className="lead">Unlimited users, unlimited courses on all plans</p>
               </header>
               <div className="row gap-y text-center">
                 <div className="col-12 col-md-4">
                   <div className="pricing-1">
                     <p className="plan-name">PRO</p>
                     <br />
-                    <h2 className="price text-primary"><span className="price-unit">$</span> 10</h2>
+                    <h2 className="price"><span className="price-unit">$</span> 10</h2>
                     <p><small className="opacity-50">Per month</small></p>
-                    <small>Searchable messages up to 10K</small><br />
-                    <small>10 apps or service integrations</small><br />
-                    <small>5GB total file storage for the team</small><br />
+
+                    <small>Single Academy</small><br />
+                    <small>Single Admin</small><br />
+                    <small>Instant Payouts</small><br />
+                    <small>No sales commission </small><br />
+                    <small>10GB Storage</small><br />
+                    <small></small><br />
                     <br />
-                    <p className="text-center py-3"><a className="btn btn-primary" href>Get started</a></p>
+                    <p className="text-center py-3"><a className="btn btn-primary" href="https://studio.worldclass.io/#/signup">Get started</a></p>
                   </div>
                 </div>
                 <div className="col-12 col-md-4">
                   <div className="pricing-1">
                     <p className="plan-name">TEAM</p>
                     <br />
-                    <h2 className="price text-primary"><span className="price-unit">$</span> 30</h2>
+                    <h2 className="price"><span className="price-unit">$</span> 30</h2>
                     <p><small className="opacity-50">Per month</small></p>
-                    <small>Unlimited searchable message archives</small><br />
-                    <small>Unlimited apps and service integrations</small><br />
-                    <small>10GB file storage per team member</small><br />
+
+                    <small>Unlimited Academies</small><br />
+                    <small>Unlimited Admins</small><br />
+                    <small>Invite Only Mode</small><br />
+                    <small>100GB Storage</small><br />
+                    <small>+Everything from Pro plan</small><br />
+                    <small></small><br />
                     <br />
-                    <p className="text-center py-3"><a className="btn btn-primary" href>Get started</a></p>
+                    <p className="text-center py-3"><a className="btn btn-primary" href="https://studio.worldclass.io/#/signup">Get started</a></p>
                   </div>
                 </div>
                 <div className="col-12 col-md-4">
@@ -440,11 +451,15 @@ class App extends Component {
                     <p style={{position: 'absolute', width: '100%', textAlign: 'center', marginTop: -5, color: '#aaa'}}>Starting at</p>
                     <h2 className="price"><span className="price-unit">$</span> 200</h2>
                     <p><small className="opacity-50">Per month</small></p>
-                    <small>Everything in Free &amp; Standard, and</small><br />
-                    <small>SAML-based single sign-on (SSO)</small><br />
-                    <small>Compliance Exports of all messages</small><br />
+
+                    <small>Unlimited everything</small><br />
+                    <small>Branded mobile apps</small><br />
+                    <small>Single Sign On (SSO)</small><br />
+                    <small>Free content import</small><br />
+                    <small>Custom UI</small><br />
+                    <small>Custom reports</small><br />
                     <br />
-                    <p className="text-center py-3"><a className="btn btn-primary" href>Get started</a></p>
+                    <p className="text-center py-3"><a className="btn btn-primary" href="https://studio.worldclass.io/#/signup">Get started</a></p>
                   </div>
                 </div>
               </div>
