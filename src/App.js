@@ -21,8 +21,7 @@ const tabs = [
   "Integrations",
   "Analytics",
   "Customization",
-  "User Management",
-  "More"
+  "User Management"
 ]
 
 
@@ -72,46 +71,6 @@ Use our built-in editor to include logos, change colours and layouts and if you 
 Make it ‘invite only’ or open for self-signups. Invite your staff and other admins to collaborate online.
 Assign users to groups and control exactly what courses are open to them and when. Our advanced users management module can support your use case whether it’s top-secret enterprise training, a marketplace or an open to all online course
       </p>
-    )
-  },
-  "More": {
-    content: (
-      <div className="container">
-        <div className="row gap-y">
-          <div className="col-12 col-lg-4">
-            <div className="card card-bordered text-center">
-              <div className="card-block">
-                <p><i className="icon-layers fs-50 text-muted" /></p>
-                <h4 className="card-title">Localization</h4>
-                <p className="card-text">WorldClass supports 30+ languages and additional languages can be added upon request.
-Interested in adding a specific language?</p>
-                <a className="fw-600 fs-12" href="mailto:support@worldclass.io">Ask us how <i className="fa fa-chevron-right fs-9 pl-5" /></a>
-              </div>
-            </div>
-          </div>
-          <div className="col-12 col-lg-4">
-            <div className="card card-bordered text-center">
-              <div className="card-block">
-                <p><i className="icon-chat fs-50 text-muted" /></p>
-                <h4 className="card-title">Gamification</h4>
-                <p className="card-text">Your users earn points and badges based on meaningful activities which keeps them motivated and engaged</p>
-                {/*<a className="fw-600 fs-12" href>Read more <i className="fa fa-chevron-right fs-9 pl-5" /></a>*/}
-              </div>
-            </div>
-          </div>
-          <div className="col-12 col-lg-4">
-            <div className="card card-bordered text-center">
-              <div className="card-block">
-                <p><i className="icon-mic fs-50 text-muted" /></p>
-                <h4 className="card-title">Custom Work</h4>
-                <p className="card-text">Need anything at all that isn’t mentioned or listed here? Let us know and we’ll build it for you!
-We pride ourselves on helping our clients reach their goals. Sometime this means building specific add-ons, connectors, reports or helping them with content import or design services. See that chat bubble on the bottom right? Click it and tell us what you need.</p>
-                {/*<a className="fw-600 fs-12" href>Read more <i className="fa fa-chevron-right fs-9 pl-5" /></a>*/}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     )
   }
 }
@@ -260,19 +219,15 @@ class App extends Component {
                     {
                       tabs.map((t, i) =>
                         <TabPanel key={"tp_" + i}>
-                          {
-                            tabData[tabs[i]].content ?
-                            tabData[tabs[i]].content :
-                            <div className="row gap-y align-items-center">
-                              <div className="col-12 col-md-6 text-center">
-                                {tabData[tabs[i]].image}
-                              </div>
-                              <div className="col-12 offset-md-1 col-md-5">
-                                <h2>{tabs[i]}</h2>
-                                {tabData[tabs[i]].text}
-                              </div>
+                          <div className="row gap-y align-items-center">
+                            <div className="col-12 col-md-6 text-center">
+                              {tabData[tabs[i]].image}
                             </div>
-                          }
+                            <div className="col-12 offset-md-1 col-md-5">
+                              <h2>{tabs[i]}</h2>
+                              {tabData[tabs[i]].text}
+                            </div>
+                          </div>
 
                         </TabPanel>
                       )
@@ -290,42 +245,44 @@ class App extends Component {
       | Features
       |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
       !*/}
-          {/*<section className="section">
+          <section className="section bg-gray">
             <div className="container">
               <div className="row gap-y">
                 <div className="col-12 col-lg-4">
-                  <div className="card card-bordered text-center bg-gray">
+                  <div className="card card-bordered text-center">
                     <div className="card-block">
                       <p><i className="icon-layers fs-50 text-muted" /></p>
-                      <h4 className="card-title">Channels</h4>
-                      <p className="card-text">Organize your team conversations in open channels. Make a channel for a project, a team, or everyone has a transparent view.</p>
-                      <a className="fw-600 fs-12" href>Read more <i className="fa fa-chevron-right fs-9 pl-5" /></a>
+                      <h4 className="card-title">Localization</h4>
+                      <p className="card-text">WorldClass supports 30+ languages and additional languages can be added upon request.
+      Interested in adding a specific language?</p>
+                      <a className="fw-600 fs-12" href="mailto:support@worldclass.io">Ask us how <i className="fa fa-chevron-right fs-9 pl-5" /></a>
                     </div>
                   </div>
                 </div>
                 <div className="col-12 col-lg-4">
-                  <div className="card card-bordered text-center bg-gray">
+                  <div className="card card-bordered text-center">
                     <div className="card-block">
                       <p><i className="icon-chat fs-50 text-muted" /></p>
-                      <h4 className="card-title">Direct Messages</h4>
-                      <p className="card-text">Send messages directly to another and any person or to a small group of people for more focused conversations.</p>
-                      <a className="fw-600 fs-12" href>Read more <i className="fa fa-chevron-right fs-9 pl-5" /></a>
+                      <h4 className="card-title">Gamification</h4>
+                      <p className="card-text">Your users earn points and badges based on meaningful activities which keeps them motivated and engaged</p>
+                      {/*<a className="fw-600 fs-12" href>Read more <i className="fa fa-chevron-right fs-9 pl-5" /></a>*/}
                     </div>
                   </div>
                 </div>
                 <div className="col-12 col-lg-4">
-                  <div className="card card-bordered text-center bg-gray">
+                  <div className="card card-bordered text-center">
                     <div className="card-block">
                       <p><i className="icon-mic fs-50 text-muted" /></p>
-                      <h4 className="card-title">Calls</h4>
-                      <p className="card-text">Take a conversation from typing to face-to-face by starting a Slack voice or video call in any Channel or Direct Message.</p>
-                      <a className="fw-600 fs-12" href>Read more <i className="fa fa-chevron-right fs-9 pl-5" /></a>
+                      <h4 className="card-title">Custom Work</h4>
+                      <p className="card-text">Need anything at all that isn’t mentioned or listed here? Let us know and we’ll build it for you!
+      We pride ourselves on helping our clients reach their goals. Sometime this means building specific add-ons, connectors, reports or helping them with content import or design services. See that chat bubble on the bottom right? Click it and tell us what you need.</p>
+                      {/*<a className="fw-600 fs-12" href>Read more <i className="fa fa-chevron-right fs-9 pl-5" /></a>*/}
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </section>*/}
+          </section>
           {/*
       |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
       | Reclaim your workday
