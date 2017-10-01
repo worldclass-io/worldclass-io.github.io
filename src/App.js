@@ -299,10 +299,10 @@ class App extends Component {
                   <h3 className="text-primary">10,000+<br/><small>Active Academies</small></h3>
                 </div>
                 <div className="col-12 col-md-4 stat stat">
-                  <h3 className="text-primary">10,000+<br/><small>Active Academies</small></h3>
+                  <h3 className="text-primary">1,500,000+<br/><small>Active Users</small></h3>
                 </div>
                 <div className="col-12 col-md-4 stat stat">
-                  <h3 className="text-primary">10,000+<br/><small>Active Academies</small></h3>
+                  <h3 className="text-primary">230,000,000+<br/><small>Course minutes taken</small></h3>
                 </div>
               </div>
             </div>
