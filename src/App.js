@@ -30,7 +30,7 @@ const tabData = {
     image: (<img style={{height: TAB_IMAGE_HEIGHT, width: 'auto'}} src={require('./img/mobile-first.png')} alt="..." />),
     text: (
       <p>
-        Let your users take their courses on the go with our iOS and Android apps [add app store, play store images and links].
+        Let your users take their courses on the go with our iOS and Android apps <a href="https://itunes.apple.com/app/worldclass-io/id998470733?mt=8" target="_blank"><img src={require('./img/app-store-logo.png')} alt="App Store Logo" /></a> <a href="https://play.google.com/store/apps/details?id=com.codelovers.worldclass&hl=en" target="_blank"><img src={require('./img/google-play-logo.png')} alt="Google Play Logo" /></a>.
 Full support for HD video streaming across devices, advanced assessments, gamification and more.
 You can also publish your own branded mobile apps with us and get full control over your app’s branding, pricing and access.
 
@@ -95,7 +95,7 @@ class App extends Component {
               <ul className="topbar-nav nav">
                 <li className="nav-item"><a className="nav-link" href data-scrollto="home">Home</a></li>
                 <li className="nav-item"><a className="nav-link" href data-scrollto="section-features">Features</a></li>
-                <li className="nav-item"><a className="nav-link" href data-scrollto="section-testimonials">Testimonials</a></li>
+                {/*<li className="nav-item"><a className="nav-link" href data-scrollto="section-testimonials">Testimonials</a></li>*/}
                 <li className="nav-item"><a className="nav-link" href data-scrollto="section-pricing">Pricing</a></li>
                 <li className="nav-item"><a className="nav-link" href="https://studio.worldclass.io/#/login" rel="noopener noreferrer" target="_blank">Sign in</a></li>
                 <li>
