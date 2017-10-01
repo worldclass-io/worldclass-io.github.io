@@ -465,76 +465,7 @@ class App extends Component {
               </div>
             </div>
           </section>
-          {/*
-      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
-      | Partners
-      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
-      !*/}
-          <section className="section bg-gray py-40">
-            <div className="container">
-              <div className="partner partner-sm">
-                {/*<img src={require('./img/partner-1.png')} alt="..." />
-                <img src={require('./img/partner-2.png')} alt="..." />
-                <img src={require('./img/partner-3.png')} alt="..." />
-                <img src={require('./img/partner-4.png')} alt="..." />
-                <img src={require('./img/partner-5.png')} alt="..." />
-                <img src={require('./img/partner-6.png')} alt="..." />*/}
-              </div>
-            </div>
-          </section>
-          {/*
-      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
-      | FAQ
-      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
-      !*/}
-          <section className="section" id="section-faq">
-            <div className="container">
-              <header className="section-header">
-                <small>Faq</small>
-                <h2>Frequently Asked Questions</h2>
-                <hr />
-                <p className="lead">Drop us an email if you couldn't find an answert to your question in the following list.</p>
-              </header>
-              <div className="row gap-y gap-3">
-                <div className="col-12 col-md-6 col-lg-4">
-                  <h6 className="fw-400">What is TheSaaS?</h6>
-                  <p>It is a collection of layouts, design patterns, components, and guidelines for creating admin templates, SaaS startups, and complex dashboards.</p>
-                </div>
-                <div className="col-12 col-md-6 col-lg-4">
-                  <h6 className="fw-400">How long does it take?</h6>
-                  <p>It is a collection of layouts, design patterns, components, and guidelines for creating admin templates, SaaS startups, and complex dashboards.</p>
-                </div>
-                <div className="col-12 col-md-6 col-lg-4">
-                  <h6 className="fw-400">What payment services do you support?</h6>
-                  <p>We accept all major credit cards.</p>
-                </div>
-                <div className="col-12 col-md-6 col-lg-4">
-                  <h6 className="fw-400">Can I update my card details?</h6>
-                  <p>Yes. Go to the billing section of your dashboard and update your payment information.</p>
-                </div>
-                <div className="col-12 col-md-6 col-lg-4">
-                  <h6 className="fw-400">Can I cancel my subscription?</h6>
-                  <p>You can cancel your subscription at any time. Cancelling your plan comes into effect the following month.</p>
-                </div>
-                <div className="col-12 col-md-6 col-lg-4">
-                  <h6 className="fw-400">Can I get refund?</h6>
-                  <p>Unfortunately, not at this time! Please try our free plan for a while to make sure Helpato is what you want.</p>
-                </div>
-                <div className="col-12 col-md-6 col-lg-4">
-                  <h6 className="fw-400">What if I want to change plans?</h6>
-                  <p>It's quick and easy to switch between our different pricing plans from your dashboard.</p>
-                </div>
-                <div className="col-12 col-md-6 col-lg-4">
-                  <h6 className="fw-400">How long are your contracts?</h6>
-                  <p>You can upgrade, downgrade, or cancel your monthly account at any time with no further obligation.</p>
-                </div>
-                <div className="col-12 col-md-6 col-lg-4">
-                  <h6 className="fw-400">Other questions?</h6>
-                  <p>We're always available at support@domain.com</p>
-                </div>
-              </div>
-            </div>
-          </section>
+
         </main>
         {/* END Main container */}
         {/* Footer */}
@@ -549,28 +480,26 @@ class App extends Component {
               <div className="col-12 col-lg-6">
                 <ul className="nav nav-primary nav-hero">
                   <li className="nav-item">
-                    <a className="nav-link" href="index.html">Home</a>
+                    <a className="nav-link" href data-scrollto="home">Home</a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="blog.html">Blog</a>
+                    <a className="nav-link" href="https://medium.com/worldclassio" target="_blank">Blog</a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="block-feature.html">Features</a>
+                    <a className="nav-link" href data-scrollto="section-features">Features</a>
                   </li>
                   <li className="nav-item hidden-sm-down">
-                    <a className="nav-link" href="page-pricing.html">Pricing</a>
+                    <a className="nav-link" href data-scrollto="section-pricing">Pricing</a>
                   </li>
                   <li className="nav-item hidden-sm-down">
-                    <a className="nav-link" href="page-contact.html">Contact</a>
+                    <a className="nav-link" href="http://help.worldclass.io/" target="_blank">Help</a>
                   </li>
                 </ul>
               </div>
               <div className="col-12 col-lg-3">
                 <div className="social text-center text-lg-right">
-                  <a className="social-facebook" href="https://www.facebook.com/thethemeio"><i className="fa fa-facebook" /></a>
-                  <a className="social-twitter" href="https://twitter.com/thethemeio"><i className="fa fa-twitter" /></a>
+                  <a className="social-facebook" href="https://www.facebook.com/worldclassio/"><i className="fa fa-facebook" /></a>
                   <a className="social-instagram" href="https://www.instagram.com/thethemeio/"><i className="fa fa-instagram" /></a>
-                  <a className="social-dribbble" href="https://dribbble.com/thethemeio"><i className="fa fa-dribbble" /></a>
                 </div>
               </div>
             </div>
