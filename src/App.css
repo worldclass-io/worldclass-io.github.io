@@ -18,6 +18,14 @@
   font-size: large;
 }
 
+.wcapp .text-success {
+  color: #E91E63 !important;
+}
+
+#section-testimonials .stat {
+  margin-bottom: 30px;
+}
+
 #section-testimonials .stat h3 {
   font-size: 32px;
   line-height: 0.7;
@@ -45,7 +53,7 @@
 
 .testimonial .card-footer {
   line-height: 1;
-  background-color: #0facf3;
+  background-color: #E91E63;
 }
 
 .testimonial .card-footer a {

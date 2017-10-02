@@ -88,7 +88,7 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <div className="wcapp">
         {/* Topbar */}
         <nav className="topbar topbar-expand-sm topbar-sticky">
           <div className="container">
@@ -261,8 +261,8 @@ class App extends Component {
                       <p><i className="icon-layers fs-50 text-muted" /></p>
                       <h4 className="card-title">Localization</h4>
                       <p className="card-text">WorldClass supports 30+ languages and additional languages can be added upon request.
-      Interested in adding a specific language?</p>
-                      <a className="fw-600 fs-12" href="mailto:support@worldclass.io">Ask us how <i className="fa fa-chevron-right fs-9 pl-5" /></a>
+Interested in adding a specific language? Click the chat bubble below and let us know so we could add it for you!<br/>&nbsp;</p>
+                      {/*<a className="fw-600 fs-12" href="mailto:support@worldclass.io">Ask us how <i className="fa fa-chevron-right fs-9 pl-5" /></a>*/}
                     </div>
                   </div>
                 </div>
@@ -271,7 +271,7 @@ class App extends Component {
                     <div className="card-block">
                       <p><i className="icon-chat fs-50 text-muted" /></p>
                       <h4 className="card-title">Gamification</h4>
-                      <p className="card-text">Your users earn points and badges based on meaningful activities which keeps them motivated and engaged</p>
+                      <p className="card-text">Your users earn points and badges based on meaningful activities which keeps them motivated and engaged.<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;</p>
                       {/*<a className="fw-600 fs-12" href>Read more <i className="fa fa-chevron-right fs-9 pl-5" /></a>*/}
                     </div>
                   </div>
@@ -282,7 +282,8 @@ class App extends Component {
                       <p><i className="icon-mic fs-50 text-muted" /></p>
                       <h4 className="card-title">Custom Work</h4>
                       <p className="card-text">Need anything at all that isn’t mentioned or listed here? Let us know and we’ll build it for you!
-      We pride ourselves on helping our clients reach their goals. Sometime this means building specific add-ons, connectors, reports or helping them with content import or design services. See that chat bubble on the bottom right? Click it and tell us what you need.</p>
+Specific add-ons, connectors, reports or content import services - see that chat bubble on the bottom right?
+Click it and tell us what you need.</p>
                       {/*<a className="fw-600 fs-12" href>Read more <i className="fa fa-chevron-right fs-9 pl-5" /></a>*/}
                     </div>
                   </div>
@@ -305,14 +306,14 @@ class App extends Component {
             </div>
             <div className="container">
               <div className="row" style={{marginBottom: 30}}>
-                <div className="col-12 col-md-4 stat stat">
-                  <h3 className="text-primary">10,000+<br/><small>Active Academies</small></h3>
+                <div className="col-12 col-md-4 stat">
+                  <h3 className="text-success">10,000+<br/><small>Active Academies</small></h3>
                 </div>
-                <div className="col-12 col-md-4 stat stat">
-                  <h3 className="text-primary">1,500,000+<br/><small>Active Users</small></h3>
+                <div className="col-12 col-md-4 stat">
+                  <h3 className="text-success">1,500,000+<br/><small>Active Users</small></h3>
                 </div>
-                <div className="col-12 col-md-4 stat stat">
-                  <h3 className="text-primary">230,000,000+<br/><small>Course minutes taken</small></h3>
+                <div className="col-12 col-md-4 stat">
+                  <h3 className="text-success">230,000,000+<br/><small>Course minutes taken</small></h3>
                 </div>
               </div>
             </div>
@@ -324,8 +325,8 @@ class App extends Component {
                       <p className="card-text">Worldclass has enabled me to achieve something I had only dreamed of- creating and selling my own course online.  It was easier than I expected! Unbelievable customer service.</p>
                     </div>
                     <div className="card-footer">
-                      <img className="person" src={require("./img/testimonials/bryan.jpg")} alt="Wysebridge" />
-                      <h3>Wile E. Coyote, Founder and CEO</h3>
+                      <img className="person" src={require("./img/testimonials/becker-wild.jpg")} alt="Wysebridge" />
+                      <h3>Becker Wild, Founder and CEO</h3>
                       <h5>Applicant Coaching Services</h5>
                       <small><a href="http://www.applicantcoaching.ca/police-pati-test.html">www.applicantcoaching.ca</a></small>
                     </div>
@@ -347,13 +348,13 @@ class App extends Component {
                 <div className="col-12 col-lg-4">
                   <div className="card card-bordered text-center testimonial">
                     <div className="card-block">
-                      <p className="card-text">Worldclass has enabled me to achieve something I had only dreamed of- creating and selling my own course online.  It was easier than I expected! Unbelievable customer service.</p>
+                      <p className="card-text">Super happy running our online training on WorldClass. It was quick and simple to set up, our students love it and their support is exceptional!<br/>&nbsp;</p>
                     </div>
                     <div className="card-footer">
                       <img className="person" src={require("./img/testimonials/bryan.jpg")} alt="Wysebridge" />
-                      <h3>Wile E. Coyote, Founder and CEO</h3>
-                      <h5>Tina Roth Eisenberg</h5>
-                      <small>Designer, Founder of Tattly</small>
+                      <h3>Ruth Alexandrovitz, CEO</h3>
+                      <h5>1x1 Test Prep</h5>
+                      <small><a href="http://www.wysebridge.com/">www.wysebridge.com</a></small>
                     </div>
                   </div>
                 </div>
