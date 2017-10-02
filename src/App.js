@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import { uuid, queryString } from './services/Utils';
+import { uuid, queryString, initAnalytics } from './services/Utils';
 
 import './App.css';
 import './css/react-tabs.css';
@@ -84,11 +84,14 @@ Assign users to groups and control exactly what courses are open to them and whe
 }
 
 const SIGNUP_LINK = 'https://studio.worldclass.io/#!/signup?src=lp'
+const SEGMENT_API_KEY = "VIhJBaBKtpufwVKBDZkFZmUSbkrackfy"
 
 class App extends Component {
 
   constructor(props) {
     super(props)
+
+    initAnalytics(SEGMENT_API_KEY)
 
     this.state = {
       signupLink: SIGNUP_LINK
@@ -98,7 +101,9 @@ class App extends Component {
 
   componentDidMount() {
 
+    window.analytics.page('Landing Page 1.0');
     window.analytics.ready(() => {
+      console.log("READY!")
       let user = window.analytics.user()
       let id = user.anonymousId ? user.anonymousId() : null;
 
@@ -112,8 +117,7 @@ class App extends Component {
       else {
         window.analytics.identify(id, { aid: aid })
       }
-
-      window.analytics.page('Landing Page 1.0');
+      
       this.setState({ signupLink: this.state.signupLink + '&mid=' + id})
     })
 
