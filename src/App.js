@@ -117,7 +117,7 @@ class App extends Component {
       else {
         window.analytics.identify(id, { aid: aid })
       }
-      
+
       this.setState({ signupLink: this.state.signupLink + '&mid=' + id})
     })
 
@@ -376,7 +376,7 @@ Click it and tell us what you need.</p>
                     </div>
                     <div className="card-footer">
                       <img className="person" src={require("./img/testimonials/bryan.jpg")} alt="Wysebridge" />
-                      <h3>Wile E. Coyote, Founder and CEO</h3>
+                      <h3>Bryan, Founder and CEO</h3>
                       <h5>Wysebridge, LLC</h5>
                       <small><a href="http://www.wysebridge.com/">www.wysebridge.com</a></small>
                     </div>
@@ -388,7 +388,7 @@ Click it and tell us what you need.</p>
                       <p className="card-text">Super happy running our online training on WorldClass. It was quick and simple to set up, our students love it and their support is exceptional!<br/>&nbsp;</p>
                     </div>
                     <div className="card-footer">
-                      <img className="person" src={require("./img/testimonials/bryan.jpg")} alt="Wysebridge" />
+                      <img className="person" src={require("./img/testimonials/ruthie.jpg")} alt="Wysebridge" />
                       <h3>Ruth Alexandrovitz, CEO</h3>
                       <h5>1x1 Test Prep</h5>
                       <small><a href="http://www.wysebridge.com/">www.wysebridge.com</a></small>
