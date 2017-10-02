@@ -30,10 +30,17 @@ const tabData = {
     image: (<img style={{height: TAB_IMAGE_HEIGHT, width: 'auto'}} src={require('./img/mobile-first.png')} alt="..." />),
     text: (
       <p>
-        Let your users take their courses on the go with our iOS and Android apps <a href="https://itunes.apple.com/app/worldclass-io/id998470733?mt=8" target="_blank"><img src={require('./img/app-store-logo.png')} alt="App Store Logo" /></a> <a href="https://play.google.com/store/apps/details?id=com.codelovers.worldclass&hl=en" target="_blank"><img src={require('./img/google-play-logo.png')} alt="Google Play Logo" /></a>.
+        Let your users take their courses on the go with our iOS and Android apps.
 Full support for HD video streaming across devices, advanced assessments, gamification and more.
 You can also publish your own branded mobile apps with us and get full control over your app’s branding, pricing and access.
-
+      <br/>
+      <br/>
+      <a href="https://itunes.apple.com/app/worldclass-io/id998470733?mt=8" target="_blank" style={{marginRight: 20}}>
+        <img src={require('./img/app-store-logo.png')} alt="App Store Logo" style={{height: 32}} />
+      </a>
+      <a href="https://play.google.com/store/apps/details?id=com.codelovers.worldclass&hl=en" target="_blank">
+        <img src={require('./img/google-play-logo.png')} alt="Google Play Logo" style={{height: 32}} />
+      </a>
       </p>
     )
   },
