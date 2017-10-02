@@ -391,7 +391,7 @@ Click it and tell us what you need.</p>
                       <img className="person" src={require("./img/testimonials/ruthie.jpg")} alt="Wysebridge" />
                       <h3>Ruth Alexandrovitz, CEO</h3>
                       <h5>1x1 Test Prep</h5>
-                      <small><a href="http://www.wysebridge.com/">www.wysebridge.com</a></small>
+                      <small><a href="https://www.onexone.co.il/">www.onexone.co.il</a></small>
                     </div>
                   </div>
                 </div>
