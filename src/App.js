@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import { uuid, queryString } from './services/Utils';
 
 import './App.css';
 import './css/react-tabs.css';
@@ -95,66 +96,27 @@ class App extends Component {
 
   }
 
-  static uuid() {
-    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
-        var r = Math.random()*16|0, v = c == 'x' ? r : (r&0x3|0x8);
-        return v.toString(16);
-    });
-  }
-
-  static queryString() {
-    // This function is anonymous, is executed immediately and
-    // the return value is assigned to QueryString!
-    var query_string = {};
-    var query = window.location.search.substring(1);
-    var vars = query.split("&");
-    for (var i=0;i<vars.length;i++) {
-      var pair = vars[i].split("=");
-          // If first entry with this name
-      if (typeof query_string[pair[0]] === "undefined") {
-        query_string[pair[0]] = decodeURIComponent(pair[1]);
-          // If second entry with this name
-      } else if (typeof query_string[pair[0]] === "string") {
-        var arr = [ query_string[pair[0]],decodeURIComponent(pair[1]) ];
-        query_string[pair[0]] = arr;
-          // If third or later entry with this name
-      } else {
-        query_string[pair[0]].push(decodeURIComponent(pair[1]));
-      }
-    }
-    return query_string;
-  }
-
   componentDidMount() {
 
-    // analytics.track('Article Completed', {
-    //   title: 'How to Create a Tracking Plan',
-    //   course: 'Intro to Analytics',
-    // });
-    //
-    let analytics = window.analytics
-
-    analytics.ready(() => {
-      let user = analytics.user()
-      console.log(window.analytics.user())
+    window.analytics.ready(() => {
+      let user = window.analytics.user()
       let id = user.anonymousId ? user.anonymousId() : null;
 
-      console.log("User:", analytics.user())
-
-      const aid = App.queryString().aid || false;
+      const aid = queryString().aid || false;
 
       if (!id) {
-          const tempId = App.uuid();
-          analytics.identify(tempId, { aid: aid })
-          id = tempId
+        const tempId = uuid();
+        window.analytics.identify(tempId, { aid: aid })
+        id = tempId
       }
       else {
-          analytics.identify(id, { aid: aid })
+        window.analytics.identify(id, { aid: aid })
       }
 
-      analytics.page('Landing Page 1.0');
+      window.analytics.page('Landing Page 1.0');
       this.setState({ signupLink: this.state.signupLink + '&mid=' + id})
     })
+
   }
 
   render() {
