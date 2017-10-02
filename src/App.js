@@ -118,7 +118,12 @@ class App extends Component {
         window.analytics.identify(id, { aid: aid })
       }
 
-      this.setState({ signupLink: this.state.signupLink + '&mid=' + id})
+      let signupLink = this.state.signupLink + '&mid=' + id
+      if (aid) {
+        signupLink += '&aid=' + aid
+      }
+
+      this.setState({ signupLink })
     })
 
   }
