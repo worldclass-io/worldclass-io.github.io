@@ -178,7 +178,7 @@ class App extends Component {
                 <p className="pt-8"><small>Already have an account? <a className="text-muted" href="https://studio.worldclass.io/#/login" target="_blank" rel="noopener noreferrer">Sign in</a></small></p>
               </div>
               <div className="col-12 col-lg-6 offset-lg-1 img-outside-right hidden-md-down">
-                <img className="" src={require('./img/dashboard.jpg')} alt="Worldclass dashboard" />
+                <img className="" src={require('./img/dashboard3.png')} alt="Worldclass dashboard" />
               </div>
             </div>
           </div>
