@@ -376,7 +376,7 @@ Click it and tell us what you need.</p>
                     </div>
                     <div className="card-footer">
                       <img className="person" src={require("./img/testimonials/bryan.jpg")} alt="Wysebridge" />
-                      <h3>Bryan, Founder and CEO</h3>
+                      <h3>Bryan Doreian, Founder and CEO</h3>
                       <h5>Wysebridge, LLC</h5>
                       <small><a href="http://www.wysebridge.com/">www.wysebridge.com</a></small>
                     </div>
