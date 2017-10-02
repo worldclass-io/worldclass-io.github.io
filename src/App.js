@@ -35,10 +35,10 @@ Full support for HD video streaming across devices, advanced assessments, gamifi
 You can also publish your own branded mobile apps with us and get full control over your app’s branding, pricing and access.
       <br/>
       <br/>
-      <a href="https://itunes.apple.com/app/worldclass-io/id998470733?mt=8" target="_blank" style={{marginRight: 20}}>
+      <a href="https://itunes.apple.com/app/worldclass-io/id998470733?mt=8" target="_blank" rel="noopener noreferrer" style={{marginRight: 20}}>
         <img src={require('./img/app-store-logo.png')} alt="App Store Logo" style={{height: 32}} />
       </a>
-      <a href="https://play.google.com/store/apps/details?id=com.codelovers.worldclass&hl=en" target="_blank">
+      <a href="https://play.google.com/store/apps/details?id=com.codelovers.worldclass&hl=en" target="_blank" rel="noopener noreferrer">
         <img src={require('./img/google-play-logo.png')} alt="Google Play Logo" style={{height: 32}} />
       </a>
       </p>
@@ -82,9 +82,80 @@ Assign users to groups and control exactly what courses are open to them and whe
   }
 }
 
+const SIGNUP_LINK = 'https://studio.worldclass.io/#!/signup?src=lp'
+
 class App extends Component {
 
+  constructor(props) {
+    super(props)
 
+    this.state = {
+      signupLink: SIGNUP_LINK
+    }
+
+  }
+
+  static uuid() {
+    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+        var r = Math.random()*16|0, v = c == 'x' ? r : (r&0x3|0x8);
+        return v.toString(16);
+    });
+  }
+
+  static queryString() {
+    // This function is anonymous, is executed immediately and
+    // the return value is assigned to QueryString!
+    var query_string = {};
+    var query = window.location.search.substring(1);
+    var vars = query.split("&");
+    for (var i=0;i<vars.length;i++) {
+      var pair = vars[i].split("=");
+          // If first entry with this name
+      if (typeof query_string[pair[0]] === "undefined") {
+        query_string[pair[0]] = decodeURIComponent(pair[1]);
+          // If second entry with this name
+      } else if (typeof query_string[pair[0]] === "string") {
+        var arr = [ query_string[pair[0]],decodeURIComponent(pair[1]) ];
+        query_string[pair[0]] = arr;
+          // If third or later entry with this name
+      } else {
+        query_string[pair[0]].push(decodeURIComponent(pair[1]));
+      }
+    }
+    return query_string;
+  }
+
+  componentDidMount() {
+
+    // analytics.track('Article Completed', {
+    //   title: 'How to Create a Tracking Plan',
+    //   course: 'Intro to Analytics',
+    // });
+    //
+    let analytics = window.analytics
+
+    analytics.ready(() => {
+      let user = analytics.user()
+      console.log(window.analytics.user())
+      let id = user.anonymousId ? user.anonymousId() : null;
+
+      console.log("User:", analytics.user())
+
+      const aid = App.queryString().aid || false;
+
+      if (!id) {
+          const tempId = App.uuid();
+          analytics.identify(tempId, { aid: aid })
+          id = tempId
+      }
+      else {
+          analytics.identify(id, { aid: aid })
+      }
+
+      analytics.page('Landing Page 1.0');
+      this.setState({ signupLink: this.state.signupLink + '&mid=' + id})
+    })
+  }
 
   render() {
     return (
@@ -110,7 +181,7 @@ class App extends Component {
                     target="_blank"
                     rel="noopener noreferrer"
                     style={styles.getStartedButton}
-                    href="https://studio.worldclass.io/#/signup">Launch an Academy</a>
+                    href={this.state.signupLink}>Launch an Academy</a>
                 </li>
               </ul>
             </div>
@@ -132,11 +203,11 @@ class App extends Component {
                 <br />
                 <p className="lead mx-auto" />
                 <br />
-                <a className="btn btn-lg btn-primary" href="https://studio.worldclass.io/#/signup">Get Started</a>
-                <p className="pt-8"><small>Already have an account? <a className="text-muted" href="page-login.html">Sign in</a></small></p>
+                <a className="btn btn-lg btn-primary" href={this.state.signupLink}>Get Started</a>
+                <p className="pt-8"><small>Already have an account? <a className="text-muted" href="https://studio.worldclass.io/#/login" target="_blank" rel="noopener noreferrer">Sign in</a></small></p>
               </div>
               <div className="col-12 col-lg-6 offset-lg-1 img-outside-right hidden-md-down">
-                <img className="" src={require('./img/dashboard.jpg')} alt="..." />
+                <img className="" src={require('./img/dashboard.jpg')} alt="Worldclass dashboard" />
               </div>
             </div>
           </div>
@@ -372,7 +443,7 @@ Click it and tell us what you need.</p>
               <header className="section-header">
                 <h2>Plans to match your needs and budget</h2>
                 <hr />
-                <p className="lead">Unlimited users, unlimited courses on all plans</p>
+                <p className="lead" style={{fontSize: 22}}>Unlimited users, unlimited courses on all plans</p>
               </header>
               <div className="row gap-y text-center">
                 <div className="col-12 col-md-4">
@@ -389,7 +460,7 @@ Click it and tell us what you need.</p>
                     <small>10GB Storage</small><br />
                     <small></small><br />
                     <br />
-                    <p className="text-center py-3"><a className="btn btn-primary" href="https://studio.worldclass.io/#/signup">Get started</a></p>
+                    <p className="text-center py-3"><a className="btn btn-primary" href={this.state.signupLink}>Get started</a></p>
                   </div>
                 </div>
                 <div className="col-12 col-md-4">
@@ -406,7 +477,7 @@ Click it and tell us what you need.</p>
                     <small>+Everything from Pro plan</small><br />
                     <small></small><br />
                     <br />
-                    <p className="text-center py-3"><a className="btn btn-primary" href="https://studio.worldclass.io/#/signup">Get started</a></p>
+                    <p className="text-center py-3"><a className="btn btn-primary" href={this.state.signupLink}>Get started</a></p>
                   </div>
                 </div>
                 <div className="col-12 col-md-4">
@@ -424,7 +495,7 @@ Click it and tell us what you need.</p>
                     <small>Custom UI</small><br />
                     <small>Custom reports</small><br />
                     <br />
-                    <p className="text-center py-3"><a className="btn btn-primary" href="https://studio.worldclass.io/#/signup">Get started</a></p>
+                    <p className="text-center py-3"><a className="btn btn-primary" href={this.state.signupLink}>Get started</a></p>
                   </div>
                 </div>
               </div>
@@ -448,7 +519,7 @@ Click it and tell us what you need.</p>
                     <a className="nav-link" href data-scrollto="home">Home</a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="https://medium.com/worldclassio" target="_blank">Blog</a>
+                    <a className="nav-link" href="https://medium.com/worldclassio" target="_blank" rel="noopener noreferrer">Blog</a>
                   </li>
                   <li className="nav-item">
                     <a className="nav-link" href data-scrollto="section-features">Features</a>
@@ -457,7 +528,7 @@ Click it and tell us what you need.</p>
                     <a className="nav-link" href data-scrollto="section-pricing">Pricing</a>
                   </li>
                   <li className="nav-item hidden-sm-down">
-                    <a className="nav-link" href="http://help.worldclass.io/" target="_blank">Help</a>
+                    <a className="nav-link" href="http://help.worldclass.io/" target="_blank" rel="noopener noreferrer">Help</a>
                   </li>
                 </ul>
               </div>
