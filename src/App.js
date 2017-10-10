@@ -101,7 +101,6 @@ class App extends Component {
 
   componentDidMount() {
 
-    window.analytics.page('Landing Page 1.0');
     window.analytics.ready(() => {
       console.log("READY!")
       let user = window.analytics.user()
@@ -117,6 +116,8 @@ class App extends Component {
       else {
         window.analytics.identify(id, { aid: aid })
       }
+
+      window.analytics.page('Landing Page 1.0');
 
       let signupLink = this.state.signupLink + '&mid=' + id
       if (aid) {
