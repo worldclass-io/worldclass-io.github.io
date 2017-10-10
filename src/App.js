@@ -117,6 +117,7 @@ class App extends Component {
         window.analytics.identify(id, { aid: aid })
       }
 
+
       window.analytics.page('Landing Page 1.0');
 
       let signupLink = this.state.signupLink + '&mid=' + id
