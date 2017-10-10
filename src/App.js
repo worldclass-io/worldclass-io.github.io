@@ -102,6 +102,7 @@ class App extends Component {
   componentDidMount() {
 
     window.analytics.ready(() => {
+
       console.log("READY!")
       let user = window.analytics.user()
       let id = user.anonymousId ? user.anonymousId() : null;
